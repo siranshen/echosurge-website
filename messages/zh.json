@@ -1,0 +1,15 @@
+{
+  "Header": {
+    "home": "首页",
+    "about": "关于我们",
+    "blog": "博客",
+    "contact": "联系我们",
+    "getDemo": "获取演示"
+  },
+  "HomePage": {
+    "heroTitlePart1": "让您的品牌出现在",
+    "heroTitlePart2": "的回答中",
+    "heroSubtitle": "助力品牌抢占 AI 时代的流量入口",
+    "getDemo": "获取演示"
+  }
+} 

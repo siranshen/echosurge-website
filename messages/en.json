@@ -1,0 +1,15 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "About us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getDemo": "Get a Demo"
+  },
+  "HomePage": {
+    "heroTitlePart1": "Make your brand",
+    "heroTitlePart2": "part of the answer by",
+    "heroSubtitle": "Your gateway to AI era traffic",
+    "getDemo": "Get a Demo"
+  }
+} 
