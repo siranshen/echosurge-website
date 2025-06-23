@@ -20,16 +20,44 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
     email: '',
     purpose: '',
   });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    if (message) setMessage(null); // Clear message on edit
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (onSubmit) onSubmit(form);
-    onClose();
+    setLoading(true);
+    setMessage(null);
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+    setLoading(false);
+    if (res.ok) {
+      setMessage({ type: 'success', text: t('success') });
+      if (onSubmit) onSubmit(form);
+      // Clear form fields
+      setForm({
+        name: '',
+        company: '',
+        phone: '',
+        email: '',
+        purpose: '',
+      });
+    } else {
+      setMessage({ type: 'error', text: t('error') });
+    }
   };
+
+  // Clear message when modal is closed
+  React.useEffect(() => {
+    if (!open) setMessage(null);
+  }, [open]);
 
   if (!open) return null;
 
@@ -94,7 +122,12 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
             </select>
             <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">&gt;</span>
           </div>
-          <Button type="submit" size="md" className="self-center px-10 my-4">{t('submit')}</Button>
+          {message && (
+            <div className={`text-sm mb-2 text-center ${message.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>{message.text}</div>
+          )}
+          <Button type="submit" size="md" className="self-center px-10 my-4" disabled={loading}>
+            {loading ? t('submitting') : t('submit')}
+          </Button>
         </form>
       </div>
     </div>

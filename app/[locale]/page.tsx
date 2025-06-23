@@ -10,6 +10,7 @@ import { Faq } from '@/components/Faq';
 import { Footer } from '@/components/Footer';
 import { useState } from 'react';
 import { ContactModal } from '@/components/ContactModal';
+import { SubscribeForm } from '@/components/SubscribeForm';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -153,15 +154,7 @@ export default function HomePage() {
               <p className="text-sm md:text-base lg:text-xl text-[var(--foreground-secondary)] font-base max-w-xl md:max-w-2xl lg:max-w-3xl px-8">
                 {t('subscribeSubtitle')}
               </p>
-              <div className="relative flex items-center bg-white rounded-lg max-w-[280px] md:max-w-sm lg:max-w-md text-sm lg:text-base" style={{boxShadow: '0px 0px 10px 0px rgba(127, 189, 255, 0.20)'}}>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder={t('subscribePlaceholder')}
-                  className="bg-transparent border-none focus:outline-none mx-5 text-[var(--foreground)] placeholder-[var(--foreground-secondary)] flex-1 min-w-0"
-                />
-                <Button size="md" className="flex-shrink-0 px-4 py-2">{t('subscribeButton')}</Button>
-              </div>
+              <SubscribeForm />
             </div>
           </div>
         </section>

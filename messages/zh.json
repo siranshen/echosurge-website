@@ -25,9 +25,7 @@
     "earlyAccessButton": "联系我们获取内测权限",
     "faqSection": "常见问题",
     "subscribeTitle": "回声谷致力于帮助品牌抢占AI搜索与社媒新流量入口，获得未来声量。",
-    "subscribeSubtitle": "订阅谷中之声，获取GEO前沿资讯",
-    "subscribePlaceholder": "您的邮箱",
-    "subscribeButton": "订阅"
+    "subscribeSubtitle": "订阅谷中之声，获取GEO前沿资讯"
   },
   "Faq": {
     "whatIsGEO": {
@@ -66,6 +64,16 @@
     "purposeCollaboration": "合作与定制",
     "purposeMedia": "媒体采访",
     "purposeOther": "其他",
-    "submit": "提交"
+    "submit": "提交",
+    "submitting": "提交中...",
+    "success": "感谢您的留言！我们很快会与您联系。",
+    "error": "抱歉！出错了。请稍后再试。"
+  },
+  "SubscribeForm": {
+    "placeholder": "您的邮箱",
+    "subscribe": "订阅",
+    "submitting": "提交中...",
+    "success": "感谢您的订阅！",
+    "error": "抱歉！出错了。请稍后再试。"
   }
 } 
