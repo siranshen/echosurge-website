@@ -34,8 +34,7 @@ export function SubscribeForm() {
         </div>
       )}
       <form
-        className='relative flex items-center bg-white rounded-lg max-w-[280px] md:max-w-sm lg:max-w-md text-sm lg:text-base'
-        style={{ boxShadow: '0px 0px 10px 0px rgba(127, 189, 255, 0.20)' }}
+        className='relative flex items-center bg-white rounded-lg max-w-[280px] md:max-w-sm lg:max-w-md text-sm lg:text-base input-shadow'
       >
         <input
           type='email'

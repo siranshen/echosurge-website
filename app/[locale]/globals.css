@@ -71,6 +71,10 @@ body {
   color: transparent;
 }
 
+.input-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(127, 189, 255, 0.20);
+}
+
 @keyframes slideDown {
   from {
     height: 0;

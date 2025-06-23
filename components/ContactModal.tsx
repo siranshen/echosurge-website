@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { Button } from './ui/button'
-import { X } from 'lucide-react'
+import { X, ChevronDown } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 interface ContactModalProps {
@@ -64,13 +64,13 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
   return (
     <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm'>
       <div className='relative w-full max-w-md mx-4 bg-[#F2FBFF] rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-center'>
-        <button className='absolute top-4 right-4 text-gray-400 hover:text-gray-600' onClick={onClose} aria-label='Close'>
+        <button className='absolute top-4 right-4 text-[var(--foreground-secondary)] cursor-pointer opacity-80 hover:opacity-100' onClick={onClose} aria-label='Close'>
           <X className='w-6 h-6' />
         </button>
         <h2 className='text-3xl md:text-4xl font-bold mb-8 text-center text-[var(--branded-blue)]'>{t('contactModalTitle')}</h2>
         <form className='w-full flex flex-col gap-5' onSubmit={handleSubmit}>
           <input
-            className='w-full rounded-lg border-none bg-white px-4 py-3 text-gray-500 text-base shadow focus:outline-none focus:ring-2 focus:ring-[#7EEBAE] placeholder-gray-400'
+            className='w-full rounded-lg border-none bg-white px-4 py-3 text-[var(--foreground)] text-base input-shadow focus:outline-none focus:ring-2 focus:ring-[var(--branded-green)] placeholder-[var(--foreground-secondary)]'
             placeholder={t('name')}
             name='name'
             type='text'
@@ -79,7 +79,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
             required
           />
           <input
-            className='w-full rounded-lg border-none bg-white px-4 py-3 text-gray-500 text-base shadow focus:outline-none focus:ring-2 focus:ring-[#7EEBAE] placeholder-gray-400'
+            className='w-full rounded-lg border-none bg-white px-4 py-3 text-[var(--foreground)] text-base input-shadow focus:outline-none focus:ring-2 focus:ring-[var(--branded-green)] placeholder-[var(--foreground-secondary)]'
             placeholder={t('company')}
             name='company'
             type='text'
@@ -88,7 +88,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
             required
           />
           <input
-            className='w-full rounded-lg border-none bg-white px-4 py-3 text-gray-500 text-base shadow focus:outline-none focus:ring-2 focus:ring-[#7EEBAE] placeholder-gray-400'
+            className='w-full rounded-lg border-none bg-white px-4 py-3 text-[var(--foreground)] text-base input-shadow focus:outline-none focus:ring-2 focus:ring-[var(--branded-green)] placeholder-[var(--foreground-secondary)]'
             placeholder={t('email')}
             name='email'
             type='email'
@@ -97,7 +97,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
             required
           />
           <input
-            className='w-full rounded-lg border-none bg-white px-4 py-3 text-gray-500 text-base shadow focus:outline-none focus:ring-2 focus:ring-[#7EEBAE] placeholder-gray-400'
+            className='w-full rounded-lg border-none bg-white px-4 py-3 text-[var(--foreground)] text-base input-shadow focus:outline-none focus:ring-2 focus:ring-[var(--branded-green)] placeholder-[var(--foreground-secondary)]'
             placeholder={t('phone')}
             name='phone'
             type='text'
@@ -106,7 +106,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
           />
           <div className='relative'>
             <select
-              className='w-full rounded-lg border-none bg-white px-4 py-3 text-gray-500 text-base shadow focus:outline-none focus:ring-2 focus:ring-[#7EEBAE] placeholder-gray-400 pr-8 appearance-none'
+              className='w-full rounded-lg border-none bg-white px-4 py-3 text-[var(--foreground)] text-base input-shadow focus:outline-none focus:ring-2 focus:ring-[var(--branded-green)] placeholder-[var(--foreground-secondary)] pr-8 appearance-none'
               name='purpose'
               value={form.purpose}
               onChange={handleChange}
@@ -120,7 +120,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
               <option value='3'>{t('purposeMedia')}</option>
               <option value='100'>{t('purposeOther')}</option>
             </select>
-            <span className='absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none'>&gt;</span>
+            <span className='absolute right-3 top-1/2 -translate-y-1/2 text-[var(--foreground-secondary)] pointer-events-none'>
+              <ChevronDown className='w-4 h-4' />
+            </span>
           </div>
           {message && (
             <div className={`text-sm mb-2 text-center ${message.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>
