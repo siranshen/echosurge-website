@@ -20,7 +20,7 @@ export function Footer() {
           <div className='flex items-center gap-20 text-sm text-[var(--foreground)]'>
             <div className='flex flex-col gap-1'>
               <a href='#'>{t('about')}</a>
-              <a href='#'>{t('contact')}</a>
+              <a href='mailto:hello@echosurge.ai'>{t('contact')}</a>
             </div>
             <div className='flex flex-col gap-1'>
               <a href='#'>{t('privacyPolicy')}</a>

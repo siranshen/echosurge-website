@@ -24,7 +24,7 @@ export function Header() {
   const navLinks = [
     { href: '#', label: t('home') },
     { href: '#', label: t('about') },
-    { href: '#', label: t('contact') },
+    { href: 'mailto:hello@echosurge.ai', label: t('contact') },
   ]
 
   const logoSrc = locale === 'zh' ? '/logo-zh.svg' : '/logo.svg'
