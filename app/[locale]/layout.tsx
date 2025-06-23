@@ -1,55 +1,52 @@
-import type { Metadata } from "next";
-import { Host_Grotesk, Noto_Sans_SC } from "next/font/google";
-import "./globals.css";
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next'
+import { Host_Grotesk, Noto_Sans_SC } from 'next/font/google'
+import './globals.css'
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { notFound } from 'next/navigation'
+import { routing } from '@/i18n/routing'
+import { setRequestLocale } from 'next-intl/server'
 
 const notoSansSC = Noto_Sans_SC({
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-noto-sans-sc",
-});
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-noto-sans-sc',
+})
 
 const hostGrotesk = Host_Grotesk({
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  variable: "--font-host-grotesk",
-});
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-host-grotesk',
+})
 
 export const metadata: Metadata = {
-  title: "EchoSurge",
-  description: "Make your brand part of the answer by AI",
+  title: 'EchoSurge',
+  description: 'Make your brand part of the answer by AI',
   icons: {
     icon: '/favicon.ico',
   },
-};
- 
+}
+
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }))
 }
 
 export default async function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params;
+  const { locale } = await params
 
   if (!hasLocale(routing.locales, locale)) {
-    notFound();
+    notFound()
   }
 
   // Enable static rendering
-  setRequestLocale(locale);
+  setRequestLocale(locale)
 
-  const fontClassName =
-    locale === "zh"
-      ? `${notoSansSC.variable} font-sans`
-      : `${hostGrotesk.variable} font-sans`;
+  const fontClassName = locale === 'zh' ? `${notoSansSC.variable} font-sans` : `${hostGrotesk.variable} font-sans`
 
   return (
     <html lang={locale}>
@@ -57,5 +54,5 @@ export default async function RootLayout({
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }

@@ -1,15 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
-  --background-secondary: #F2FBFF;
+  --background-secondary: #f2fbff;
   --foreground: #010112;
-  --foreground-secondary: #A3A3AD;
-  --gradient-primary: linear-gradient(129deg, #7AEFA9 -16.7%, #7FBDFF 64.23%);
-  --branded-green: #87EDB0;
-  --branded-blue: #7FBDFF;
-  --branded-pink: #F7A1CC;
-  
+  --foreground-secondary: #a3a3ad;
+  --gradient-primary: linear-gradient(129deg, #7aefa9 -16.7%, #7fbdff 64.23%);
+  --branded-green: #87edb0;
+  --branded-blue: #7fbdff;
+  --branded-pink: #f7a1cc;
+
   /* shadcn/ui variables */
   --card: 0 0% 100%;
   --card-foreground: 222.2 84% 4.9%;
@@ -72,31 +72,31 @@ body {
 }
 
 @keyframes slideDown {
-	from {
-		height: 0;
-	}
-	to {
-		height: var(--radix-accordion-content-height);
-	}
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
 }
 
 @keyframes slideUp {
-	from {
-		height: var(--radix-accordion-content-height);
-	}
-	to {
-		height: 0;
-	}
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
 }
 
 .AccordionContent {
-	overflow: hidden;
+  overflow: hidden;
 }
 
-.AccordionContent[data-state="open"] {
-	animation: slideDown 300ms ease-out;
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms ease-out;
 }
 
-.AccordionContent[data-state="closed"] {
-	animation: slideUp 300ms ease-out;
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
 }
