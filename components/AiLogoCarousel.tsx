@@ -39,7 +39,7 @@ export function AiLogoCarousel({ locale }: AiLogoCarouselProps) {
 
   return (
     <div
-      className='inline-flex items-center justify-center py-2 px-4 md:px-6 rounded-[20px] bg-white shadow transition-all duration-300 h-12 md:h-[75px] lg:h-[90px] min-h-[48px]'
+      className='inline-flex items-center justify-center py-2 px-4 md:px-5 rounded-[20px] bg-white shadow h-12 md:h-16 lg:h-18 min-h-[48px]'
       style={{
         background: 'linear-gradient(white, white) padding-box, var(--gradient-primary) border-box',
         border: '3px solid transparent',
@@ -52,9 +52,9 @@ export function AiLogoCarousel({ locale }: AiLogoCarouselProps) {
         alt={currentPlatform.name}
         width={28}
         height={28}
-        className='mr-2 md:mr-3 flex-shrink-0 w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10'
+        className='mr-2 md:mr-3 flex-shrink-0 w-auto h-7 md:h-8 lg:h-9'
       />
-      <span className='text-2xl md:text-4xl lg:text-5xl font-medium text-gray-800 flex-shrink-0'>{currentPlatform.name}</span>
+      <span className='text-2xl md:text-3xl lg:text-4xl font-medium text-gray-800 flex-shrink-0'>{currentPlatform.name}</span>
     </div>
   )
 }

@@ -23,7 +23,7 @@ export default function HomePage() {
       <ContactModal open={isContactModalOpen} onClose={() => setContactModalOpen(false)} />
 
       <div
-        className='absolute top-[88px] left-0 w-full min-h-[720px] md:min-h-[820px] lg:min-h-[960px]'
+        className='absolute top-[88px] left-0 w-full min-h-[680px] md:min-h-[720px] lg:min-h-[840px]'
         style={{
           background: 'linear-gradient(180deg, #F2FBFF 0%, rgba(242, 251, 255, 0.00) 40%)',
         }}
@@ -32,7 +32,7 @@ export default function HomePage() {
       <div className='relative max-w-[1200px] mx-auto text-center'>
         <section
           id='hero'
-          className='relative flex flex-col min-h-[720px] md:min-h-[820px] lg:min-h-[960px] px-6 overflow-hidden'
+          className='relative flex flex-col min-h-[680px] md:min-h-[720px] lg:min-h-[840px] px-6 overflow-hidden'
         >
           <div className='absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[844px] lg:w-[1000px] -z-10'>
             <Image src='/echoes.svg' alt='Decorative Echoes' width={1100} height={400} className='w-full h-auto' />
@@ -41,22 +41,22 @@ export default function HomePage() {
           <div className='relative pt-[100px]'>
             {locale === 'en' ? (
               <>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
                 <div className='mt-4'>
                   <AiLogoCarousel locale={locale} />
                 </div>
               </>
             ) : (
               <>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
                 <div className='mt-4'>
                   <AiLogoCarousel locale={locale} />
                 </div>
-                <h1 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
+                <h1 className='mt-4 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
               </>
             )}
-            <p className='mt-10 text-lg md:text-2xl lg:text-3xl max-w-2xl mx-auto'>{t('heroSubtitle')}</p>
+            <p className='mt-10 text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto'>{t('heroSubtitle')}</p>
             <div className='mt-10'>
               <Button size='lg' onClick={() => setContactModalOpen(true)}>
                 {t('getDemo')}
@@ -85,7 +85,7 @@ export default function HomePage() {
 
           <div>
             <h2 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('servicesSection')}</h2>
-            <h1 className='mt-6 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight'>{t('servicesTitle')}</h1>
+            <h1 className='mt-6 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight'>{t('servicesTitle')}</h1>
             <p className='mt-6 text-sm/loose md:text-base/loose lg:text-xl/loose font-light max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto'>
               {t('servicesDescription')}
             </p>
