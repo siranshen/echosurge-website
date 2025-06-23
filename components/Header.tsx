@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Globe, Menu, X } from 'lucide-react';
@@ -12,11 +12,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { ContactModal } from '@/components/ContactModal';
 
 export function Header() {
   const t = useTranslations('Header');
+  const locale = useLocale();
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const changeLocale = (locale: string) => {
     const newPath = `/${locale}`;
@@ -26,9 +29,10 @@ export function Header() {
   const navLinks = [
     { href: '#', label: t('home') },
     { href: '#', label: t('about') },
-    { href: '#', label: t('blog') },
     { href: '#', label: t('contact') },
   ];
+
+  const logoSrc = locale === 'zh' ? '/logo-zh.svg' : '/logo.svg';
 
   const localeSwitcher = (
     <DropdownMenu>
@@ -49,42 +53,51 @@ export function Header() {
   );
 
   return (
-    <header className="bg-white min-h-[88px] sticky top-0 z-50 flex flex-col justify-center">
-      <div className="px-6 md:px-10 lg:px-12 flex justify-between items-center">
-        <Image src="/logo.svg" alt="EchoSurge Logo" width={158} height={48} />
-        <div className="flex items-center space-x-3">
-          <nav className="hidden md:flex items-center space-x-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm px-2 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+    <>
+      <header className="bg-white min-h-[88px] sticky top-0 z-50 flex items-center justify-center">
+        <div className="max-w-[1200px] w-full px-6 md:px-10 lg:px-12 flex justify-between items-center">
+          <Image 
+            src={logoSrc} 
+            alt="EchoSurge Logo" 
+            width={158} 
+            height={48}
+            className="h-auto w-24 md:w-28 lg:w-32"
+          />
+          <div className="flex items-center space-x-3">
+            <nav className="hidden md:flex items-center space-x-3">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm px-2 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+            <div className="hidden md:flex items-center">{localeSwitcher}</div>
+            <Button size="sm" className='md:ml-2' onClick={() => setIsModalOpen(true)}>{t('getDemo')}</Button>
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(true)}
               >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <div className="hidden md:flex items-center">{localeSwitcher}</div>
-          <Button className='md:ml-2'>{t('getDemo')}</Button>
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <Menu className="h-6 w-6" />
-            </Button>
+                <Menu className="h-6 w-6" />
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 bg-white md:hidden">
           <div className="flex justify-between items-center px-6 h-[88px]">
             <Image
-              src="/logo.svg"
+              src={logoSrc}
               alt="EchoSurge Logo"
               width={158}
               height={48}
+              className="w-24 h-8 sm:w-28 sm:h-9 md:w-32 md:h-10 lg:w-40 lg:h-12"
             />
             <Button
               variant="ghost"
@@ -94,21 +107,22 @@ export function Header() {
               <X className="h-6 w-6" />
             </Button>
           </div>
-          <nav className="flex flex-col items-center justify-center pt-16 space-y-8">
+          <nav className="flex flex-col items-center justify-center pt-4 space-y-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-2xl"
+                className="text-base"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <div className="absolute bottom-10">{localeSwitcher}</div>
+            <div>{localeSwitcher}</div>
           </nav>
         </div>
       )}
-    </header>
+      <ContactModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 } 

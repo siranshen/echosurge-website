@@ -6,10 +6,66 @@
     "contact": "联系我们",
     "getDemo": "获取演示"
   },
+  "Footer": {
+    "copyright": "© 2025 EchoSurge. All rights reserved.",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
   "HomePage": {
     "heroTitlePart1": "让您的品牌出现在",
     "heroTitlePart2": "的回答中",
     "heroSubtitle": "助力品牌抢占 AI 时代的流量入口",
-    "getDemo": "获取演示"
+    "getDemo": "获取演示",
+    "servicesSection": "我们的服务",
+    "servicesTitle": "全流程 GEO 解决方案",
+    "servicesDescription": "结合对目前主流大模型与主流社媒平台流量分布的深度理解，为企业提供从策略诊断、模型抓取策略调整、内容执行到效果监测的全流程解决方案。",
+    "earlyAccessTitle": "想了解您的品牌在 AI 回答中的提及率？",
+    "earlyAccessButton": "联系我们获取内测权限",
+    "faqSection": "常见问题",
+    "subscribeTitle": "回声谷致力于帮助品牌抢占AI搜索与社媒新流量入口，获得未来声量。",
+    "subscribeSubtitle": "订阅谷中之声，获取GEO前沿资讯",
+    "subscribePlaceholder": "您的邮箱",
+    "subscribeButton": "订阅"
+  },
+  "Faq": {
+    "whatIsGEO": {
+      "question": "什么是 GEO？",
+      "answer": "GEO (生成式引擎优化) 是一门新兴领域，致力于提升品牌在 ChatGPT、Perplexity、Claude 和 Gemini 等 AI 驱动平台上的可见度、定位与表现。"
+    },
+    "diffGEOSEO": {
+      "question": "GEO 与 SEO 有什么不同？",
+      "answer": "SEO 专注于在谷歌等传统搜索引擎中排名，而 GEO 则是专为在生成式人工智能平台上的可见性和性能而设计的。这是搜索优化的下一个演进方向。"
+    },
+    "platforms": {
+      "question": "EchoSurge 回声谷可以覆盖哪些 AI 平台？",
+      "answer": "我们覆盖所有主流的 AI 平台，包括 ChatGPT、Perplexity、Claude 和 Gemini，确保您的品牌在整个 AI 生态系统中拥有一致而强大的存在感。"
+    },
+    "businesses": {
+      "question": "EchoSurge 回声谷适合哪些企业/品牌？",
+      "answer": "EchoSurge 非常适合任何希望在 AI 时代成为领导者的企业或品牌。无论您是初创公司还是老牌企业，我们的平台都可以帮助您在这片新天地中与受众建立联系。"
+    },
+    "results": {
+      "question": "多长时间可以看到增长效果？",
+      "answer": "虽然结果可能有所不同，但我们的客户通常在实施我们的 GEO 策略的最初几周内就能看到品牌知名度和参与度的显著提高。"
+    }
+  },
+  "EchoMonitor": {
+    "EchoMonitor": "回声监测器",
+    "brandA": "某知名品牌"
+  },
+  "ContactModal": {
+    "contactModalTitle": "联系我们",
+    "name": "称呼*",
+    "company": "企业名称*",
+    "email": "工作邮箱*",
+    "phone": "联系电话",
+    "purpose": "您想讨论什么？*",
+    "purposeConsult": "咨询AI曝光",
+    "purposeCollaboration": "合作与定制",
+    "purposeMedia": "媒体采访",
+    "purposeOther": "其他",
+    "submit": "提交"
   }
 } 

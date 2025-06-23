@@ -2,14 +2,69 @@
   "Header": {
     "home": "Home",
     "about": "About us",
-    "blog": "Blog",
     "contact": "Contact",
     "getDemo": "Get a Demo"
+  },
+  "Footer": {
+    "copyright": "© 2025 EchoSurge. All rights reserved.",
+    "about": "About Us",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   },
   "HomePage": {
     "heroTitlePart1": "Make your brand",
     "heroTitlePart2": "part of the answer by",
     "heroSubtitle": "Your gateway to AI era traffic",
-    "getDemo": "Get a Demo"
+    "getDemo": "Get a Demo",
+    "servicesSection": "What We Do",
+    "servicesTitle": "End-to-end GEO Solution",
+    "servicesDescription": "Leveraging a deep understanding of traffic distribution across mainstream large language models and social media platforms, we provide end-to-end solutions for businesses — from strategic diagnosis and model capture optimization to content execution and performance monitoring.",
+    "earlyAccessTitle": "Want to know how often AI mentions your brand?",
+    "earlyAccessButton": "Contact us to get early access",
+    "faqSection": "FAQs",
+    "subscribeTitle": "EchoSurge helps brands tap into the next wave of AI search traffic, building future visibility and influence.",
+    "subscribeSubtitle": "Subscribe to the echoes for the latest insights on GEO.",
+    "subscribePlaceholder": "Your email",
+    "subscribeButton": "Subscribe"
+  },
+  "Faq": {
+    "whatIsGEO": {
+      "question": "What is GEO?",
+      "answer": "GEO (Generative Engine Optimization) is a cutting-edge field helping brands stand out and perform better across leading AI-powered platforms like ChatGPT, Perplexity, Claude, and Gemini."
+    },
+    "diffGEOSEO": {
+      "question": "What's the difference between GEO and SEO?",
+      "answer": "While SEO focuses on ranking in traditional search engines like Google, GEO is specifically designed for visibility and performance on generative AI platforms. It's the next evolution of search optimization."
+    },
+    "platforms": {
+      "question": "Which AI platforms does EchoSurge cover?",
+      "answer": "We cover all major AI platforms, including ChatGPT, Perplexity, Claude, and Gemini, ensuring your brand has a consistent and powerful presence across the entire AI ecosystem."
+    },
+    "businesses": {
+      "question": "What types of businesses or brands is EchoSurge best suited for?",
+      "answer": "EchoSurge is ideal for any business or brand that wants to be a leader in the AI era. Whether you're a startup or an established enterprise, our platform can help you connect with your audience in this new landscape."
+    },
+    "results": {
+      "question": "How soon can I expect to see growth results?",
+      "answer": "While results can vary, our clients typically start seeing measurable improvements in brand visibility and engagement within the first few weeks of implementing our GEO strategies."
+    }
+  },
+  "EchoMonitor": {
+    "EchoMonitor": "EchoMonitor",
+    "brandA": "Brand A"
+  },
+  "ContactModal": {
+    "contactModalTitle": "Talk to us",
+    "name": "Full name *",
+    "company": "Company name *",
+    "email": "Work email *",
+    "phone": "Phone Number",
+    "purpose": "What do you want to talk about? *",
+    "purposeConsult": "Consult AI Exposure",
+    "purposeCollaboration": "Collaboration and Customization",
+    "purposeMedia": "Media Interviews",
+    "purposeOther": "Other",
+    "submit": "Submit"
   }
 } 

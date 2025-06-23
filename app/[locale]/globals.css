@@ -2,10 +2,13 @@
 
 :root {
   --background: #ffffff;
+  --background-secondary: #F2FBFF;
   --foreground: #010112;
+  --foreground-secondary: #A3A3AD;
   --gradient-primary: linear-gradient(129deg, #7AEFA9 -16.7%, #7FBDFF 64.23%);
-  --gradient-primary-start: #7AEFA9;
-  --gradient-primary-end: #7FBDFF;
+  --branded-green: #87EDB0;
+  --branded-blue: #7FBDFF;
+  --branded-pink: #F7A1CC;
   
   /* shadcn/ui variables */
   --card: 0 0% 100%;
@@ -32,8 +35,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-gradient-primary: var(--gradient-primary);
-  --color-gradient-primary-start: var(--gradient-primary-start);
-  --color-gradient-primary-end: var(--gradient-primary-end);
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
   --color-popover: hsl(var(--popover));
@@ -60,7 +61,42 @@ body {
   color: var(--foreground);
 }
 
-/* Custom gradient class for the exact -73 degree angle */
-.bg-gradient-custom {
+.bg-gradient-primary {
   background: var(--gradient-primary);
+}
+
+.gradient-text {
+  background-image: var(--gradient-primary);
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes slideDown {
+	from {
+		height: 0;
+	}
+	to {
+		height: var(--radix-accordion-content-height);
+	}
+}
+
+@keyframes slideUp {
+	from {
+		height: var(--radix-accordion-content-height);
+	}
+	to {
+		height: 0;
+	}
+}
+
+.AccordionContent {
+	overflow: hidden;
+}
+
+.AccordionContent[data-state="open"] {
+	animation: slideDown 300ms ease-out;
+}
+
+.AccordionContent[data-state="closed"] {
+	animation: slideUp 300ms ease-out;
 }
