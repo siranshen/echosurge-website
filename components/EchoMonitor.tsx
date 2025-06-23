@@ -2,11 +2,11 @@ import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl'
 
 const listPlatforms = [
-  { name: 'Gemini', logo: '/gemini-logo.svg', change: '+158%', changeColor: 'text-emerald-500' },
-  { name: 'Copilot', logo: '/copilot-logo.svg', change: '+51%', changeColor: 'text-emerald-500' },
-  { name: 'Claude', logo: '/claude-logo.svg', change: '+11%', changeColor: 'text-emerald-500' },
-  { name: 'Perplexity', logo: '/perplexity-logo.svg', change: '+67%', changeColor: 'text-emerald-500' },
-  { name: '豆包', logo: '/doubao-logo.png', change: '+21%', changeColor: 'text-emerald-500' },
+  { name: 'Gemini', logo: '/gemini-logo.svg', change: '+158%', changeColor: 'text-[var(--branded-green)]' },
+  { name: 'Copilot', logo: '/copilot-logo.svg', change: '+51%', changeColor: 'text-[var(--branded-green)]' },
+  { name: 'Claude', logo: '/claude-logo.svg', change: '+11%', changeColor: 'text-[var(--branded-green)]' },
+  { name: 'Perplexity', logo: '/perplexity-logo.svg', change: '+67%', changeColor: 'text-[var(--branded-green)]' },
+  { name: '豆包', logo: '/doubao-logo.png', change: '+21%', changeColor: 'text-[var(--branded-green)]' },
 ]
 
 const floatingPlatforms = [
@@ -14,14 +14,14 @@ const floatingPlatforms = [
     name: 'ChatGPT',
     logo: '/chatgpt-logo.svg',
     change: '+201%',
-    changeColor: 'text-blue-500',
+    changeColor: 'text-[var(--branded-blue)]',
     positionClasses: 'top-[32%] -left-8 md:-left-16',
   },
   {
     name: 'DeepSeek',
     logo: '/deepseek-logo.svg',
     change: '+102%',
-    changeColor: 'text-pink-500',
+    changeColor: 'text-[var(--branded-blue)]',
     positionClasses: 'bottom-[18%] -right-8 md:-right-16',
   },
 ]

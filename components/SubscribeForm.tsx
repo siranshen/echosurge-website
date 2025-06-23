@@ -33,9 +33,7 @@ export function SubscribeForm() {
           {subscribeMessage.text}
         </div>
       )}
-      <form
-        className='relative flex items-center bg-white rounded-lg max-w-[280px] md:max-w-sm lg:max-w-md text-sm lg:text-base input-shadow'
-      >
+      <form className='relative flex items-center bg-white rounded-lg max-w-[280px] md:max-w-sm lg:max-w-md text-sm lg:text-base input-shadow'>
         <input
           type='email'
           name='email'

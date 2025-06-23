@@ -64,7 +64,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ open, onClose, onSub
   return (
     <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm'>
       <div className='relative w-full max-w-md mx-4 bg-[#F2FBFF] rounded-2xl shadow-xl p-6 md:p-10 flex flex-col items-center'>
-        <button className='absolute top-4 right-4 text-[var(--foreground-secondary)] cursor-pointer opacity-80 hover:opacity-100' onClick={onClose} aria-label='Close'>
+        <button
+          className='absolute top-4 right-4 text-[var(--foreground-secondary)] cursor-pointer opacity-80 hover:opacity-100'
+          onClick={onClose}
+          aria-label='Close'
+        >
           <X className='w-6 h-6' />
         </button>
         <h2 className='text-3xl md:text-4xl font-bold mb-8 text-center text-[var(--branded-blue)]'>{t('contactModalTitle')}</h2>
