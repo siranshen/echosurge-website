@@ -25,12 +25,20 @@ interface AiLogoCarouselProps {
 
 export function AiLogoCarousel({ locale }: AiLogoCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isVisible, setIsVisible] = useState(true)
   const platforms = locale === 'zh' ? chinesePlatforms : globalPlatforms
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % platforms.length)
-    }, 2000) // Change every 2 seconds
+      // Start fade out
+      setIsVisible(false)
+      
+      // After fade out, change to next platform and fade in
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % platforms.length)
+        setIsVisible(true)
+      }, 500) // Half of the total transition time
+    }, 2500) // Change every 2.5 seconds
 
     return () => clearInterval(interval)
   }, [platforms])
@@ -39,12 +47,14 @@ export function AiLogoCarousel({ locale }: AiLogoCarouselProps) {
 
   return (
     <div
-      className='inline-flex items-center justify-center py-2 px-4 md:px-5 rounded-[20px] bg-white shadow h-12 md:h-16 lg:h-18 min-h-[48px]'
+      className='inline-flex items-center justify-center py-2 px-4 md:px-5 rounded-[20px] bg-white shadow h-12 md:h-16 lg:h-18 min-h-[48px] transition-all duration-500 ease-in-out'
       style={{
         background: 'linear-gradient(white, white) padding-box, var(--gradient-primary) border-box',
         border: '3px solid transparent',
         boxShadow: '0px 0px 20px 0px rgba(122, 239, 169, 0.20)',
         backdropFilter: 'blur(5px)',
+        opacity: isVisible ? 1 : 0,
+        filter: isVisible ? 'blur(0px)' : 'blur(4px)',
       }}
     >
       <Image
