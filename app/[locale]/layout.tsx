@@ -60,6 +60,18 @@ export default async function RootLayout({
           src="https://hm.baidu.com/hm.js?54385ebe505504cafad559dd840b349f"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J2W6PVM2NK"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J2W6PVM2NK');
+          `}
+        </Script>
       </body>
     </html>
   )

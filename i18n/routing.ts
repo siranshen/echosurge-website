@@ -5,5 +5,5 @@ export const routing = defineRouting({
   locales: ['en', 'zh'],
 
   // Used when no locale matches
-  defaultLocale: 'en',
+  defaultLocale: (process.env.NEXT_PUBLIC_DEFAULT_LOCALE as 'en' | 'zh') || 'en',
 })

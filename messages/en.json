@@ -17,6 +17,9 @@
     "notFoundMessage": "Sorry, the page you are looking for does not exist."
   },
   "HomePage": {
+    "metadataTitle": "EchoSurge - GEO Solution",
+    "metadataDescription": "EchoSurge is a pioneering technology startup focused globally on GEO services and one of the first movers in this field. We have brought together a group of like-minded partners with exceptional professional and academic backgrounds, all dedicated to building a new paradigm of communication technology for the AI era.",
+    "metadataKeywords": "Deepseek GEO, Gemini GEO, Claude GEO, ChatGPT GEO, EchoSurge",
     "heroTitlePart1": "Make your brand",
     "heroTitlePart2": "part of the answer by",
     "heroSubtitle": "Your gateway to AI era traffic",
@@ -31,6 +34,9 @@
     "subscribeSubtitle": "Subscribe to the echoes for the latest insights on GEO."
   },
   "Faq": {
+    "metadataTitle": "FAQs - EchoSurge",
+    "metadataDescription": "You can find GEO-related content in the FAQ, which can answer your industry-related questions.",
+    "metadataKeywords": "EchoSurge, AI SEO, LLM SEO, cerebralvalley GEO, deepseek GEO",
     "seeAllFaqs": "See all FAQs",
     "backToFaqs": "Back to FAQs",
     "whatIsGEO": {
@@ -80,5 +86,10 @@
     "submitting": "Submitting...",
     "success": "Thank you for subscribing!",
     "error": "Oops! Something went wrong. Please try again later."
+  },
+  "AboutPage": {
+    "metadataTitle": "About Us - EchoSurge",
+    "metadataDescription": "We are an innovative company and a professional team, uniting diverse expertise in digital marketing, technology products, and brand strategy. Our team members come from world-class advertising and technology giants, including WPP, GroupM, Dentsu, Baidu, ByteDance, Google, AWS, and Microsoft. We have extensive experience serving a global clientele across key industries, including consumer goods, automotive, luxury, technology, and international SaaS.",
+    "metadataKeywords": "Deepseek GEO, AI SEO, ChatGPT GEO, Gemini GEO, cerebralvalley GEO"
   }
 }
