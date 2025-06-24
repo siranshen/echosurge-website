@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { setRequestLocale } from 'next-intl/server'
+import Script from 'next/script'
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ['latin', 'latin-ext'],
@@ -50,8 +51,15 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        {/* 这里可以放 meta、title 等 */}
+      </head>
       <body className={fontClassName}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Script
+          src="https://hm.baidu.com/hm.js?54385ebe505504cafad559dd840b349f"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
