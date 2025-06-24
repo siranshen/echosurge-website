@@ -29,7 +29,7 @@ export default function HomePage() {
         }}
       />
 
-      <div className='relative max-w-[1200px] mx-auto text-center'>
+      <div className='relative page-max-width mx-auto text-center'>
         <section
           id='hero'
           className='relative flex flex-col min-h-[680px] md:min-h-[720px] lg:min-h-[840px] px-6 overflow-hidden'
@@ -74,18 +74,24 @@ export default function HomePage() {
                 alt='Echo Background'
                 width={1200}
                 height={750}
-                className='w-full h-auto'
+                className='w-full h-auto page-max-width'
               />
             </div>
             {/* Desktop - regular image */}
             <div className='hidden md:block'>
-              <Image src='/echo-background.svg' alt='Echo Background' width={1200} height={750} className='w-full h-auto' />
+              <Image
+                src='/echo-background.svg'
+                alt='Echo Background'
+                width={1200}
+                height={750}
+                className='w-full h-auto page-max-width'
+              />
             </div>
           </div>
 
           <div>
-            <h2 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('servicesSection')}</h2>
-            <h1 className='mt-6 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight'>{t('servicesTitle')}</h1>
+            <h1 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('servicesSection')}</h1>
+            <h2 className='mt-6 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight'>{t('servicesTitle')}</h2>
             <p className='mt-6 text-sm/loose md:text-base/loose lg:text-xl/loose font-light max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto'>
               {t('servicesDescription')}
             </p>
@@ -113,7 +119,7 @@ export default function HomePage() {
         </section>
 
         <section id='faq' className='relative py-[80px] flex flex-col items-center'>
-          <h2 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('faqSection')}</h2>
+          <h1 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('faqSection')}</h1>
           <Faq />
         </section>
 

@@ -61,6 +61,10 @@ body {
   color: var(--foreground);
 }
 
+.page-max-width {
+  max-width: 1200px;
+}
+
 .bg-gradient-primary {
   background: var(--gradient-primary);
 }
