@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
@@ -32,23 +32,26 @@ export default function FaqListPage() {
   const categories: FaqCategory[] = faqs[locale] || []
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className='min-h-screen flex flex-col'>
       <Header />
-      <main className="flex-1 page-max-width mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]">
-        <h1 className="text-4xl md:text-5xl font-bold mb-10">FAQs</h1>
+      <main className='flex-1 max-w-3xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
+        <h1 className='text-4xl md:text-5xl font-bold mb-10'>FAQs</h1>
         {categories.map((cat) => (
-          <section key={cat.category} className="mb-10">
-            <h2 className="text-2xl font-semibold mb-4">{cat.category}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {cat.faqs.map(faq => (
-                <Link
-                  key={faq.id}
-                  href={`/${locale}/faq/${faq.id}`}
-                  className="text-sm md:text-base hover:underline flex items-center gap-2"
-                >
-                  <ChevronRight className="h-4 w-4 text-[var(--branded-blue)]" />
-                  <span className="font-medium">{faq.question}</span>
-                </Link>
+          <section key={cat.category} className='mb-10'>
+            <h2 className='text-2xl font-semibold mb-4'>{cat.category}</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+              {cat.faqs.map((faq) => (
+                <div key={faq.id} className='flex items-start gap-2 text-sm md:text-base'>
+                  <div className='w-6 flex items-center justify-center'>
+                    <ChevronRight className='text-[var(--branded-blue)]' />
+                  </div>
+                  <Link
+                    href={`/${locale}/faq/${faq.id}`}
+                    className='hover:underline'
+                  >
+                    <span className='font-medium'>{faq.question}</span>
+                  </Link>
+                </div>
               ))}
             </div>
           </section>
@@ -57,4 +60,4 @@ export default function FaqListPage() {
       <Footer />
     </div>
   )
-} 
+}

@@ -23,8 +23,8 @@ const faqs: Record<string, FaqItem[]> = {
   zh: (faqsZh as FaqCategory[]).flatMap(cat => cat.faqs),
 }
 
-export default function FaqDetailPage({ params }: { params: { locale: string, id: string } }) {
-  const { locale, id } = params
+export default async function FaqDetailPage({ params }: { params: Promise<{ locale: string, id: string }> }) {
+  const { locale, id } = await params
   const faqList: FaqItem[] = faqs[locale] || []
   const faq = faqList.find((f) => f.id === id)
   if (!faq) notFound()
