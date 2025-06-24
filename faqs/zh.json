@@ -1,0 +1,44 @@
+[
+  {
+    "category": "通用问题",
+    "faqs": [
+      {
+        "id": "what-is-echosurge",
+        "question": "EchoSurge 是什么？",
+        "answer": "EchoSurge 是一家专注于 GEO 服务和 AI 通信技术的创新科技初创公司。",
+        "title": "EchoSurge 是什么？| EchoSurge 常见问题",
+        "description": "了解 EchoSurge，这是一家专注于 GEO 服务和 AI 通信的科技公司。",
+        "keywords": ["EchoSurge", "关于", "GEO 服务", "AI 通信"]
+      },
+      {
+        "id": "how-to-contact-support",
+        "question": "如何联系支持团队？",
+        "answer": "您可以通过发送邮件至 [hello@echosurge.ai](mailto:hello@echosurge.ai) 联系我们的支持团队。\n\n**支持内容包括：**\n\n- 技术问题\n- 账单问题\n- 一般咨询\n\n更多信息请访问我们的 [联系页面](/zh/contact)。",
+        "title": "如何联系支持团队？| EchoSurge 常见问题",
+        "description": "了解如何联系 EchoSurge 支持团队以获得帮助。",
+        "keywords": ["支持", "联系", "帮助", "EchoSurge"]
+      }
+    ]
+  },
+  {
+    "category": "账单相关",
+    "faqs": [
+      {
+        "id": "how-to-update-billing-info",
+        "question": "如何更新账单信息？",
+        "answer": "要更新您的账单信息，请前往账户设置并点击**账单**。\n\n1. 进入[账户设置](/zh/account)。\n2. 点击**账单**标签。\n3. 更新您的支付信息。\n\n如需帮助，请联系 [支持团队](mailto:hello@echosurge.ai)。",
+        "title": "如何更新账单信息？| EchoSurge 常见问题",
+        "description": "了解如何在 EchoSurge 更新您的账单信息。",
+        "keywords": ["账单", "更新", "支付", "EchoSurge"]
+      },
+      {
+        "id": "can-i-get-a-refund",
+        "question": "可以申请退款吗？",
+        "answer": "退款将根据具体情况处理。请查阅我们的[退款政策](/zh/refund-policy)，如符合条件请联系支持团队。",
+        "title": "可以申请退款吗？| EchoSurge 常见问题",
+        "description": "了解 EchoSurge 的退款政策及如何申请退款。",
+        "keywords": ["退款", "政策", "EchoSurge"]
+      }
+    ]
+  }
+] 

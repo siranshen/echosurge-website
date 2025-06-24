@@ -13,6 +13,10 @@
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款"
   },
+  "NotFound": {
+    "notFoundTitle": "404 – 页面不存在",
+    "notFoundMessage": "抱歉，您访问的页面不存在。"
+  },
   "HomePage": {
     "heroTitlePart1": "让您的品牌出现在",
     "heroTitlePart2": "的回答中",
@@ -28,6 +32,8 @@
     "subscribeSubtitle": "订阅谷中之声，获取GEO前沿资讯"
   },
   "Faq": {
+    "seeAllFaqs": "查看所有常见问题",
+    "backToFaqs": "返回常见问题",
     "whatIsGEO": {
       "question": "什么是 GEO？",
       "answer": "GEO (生成式引擎优化) 是一门新兴领域，致力于提升品牌在 ChatGPT、Perplexity、Claude 和 Gemini 等 AI 驱动平台上的可见度、定位与表现。"

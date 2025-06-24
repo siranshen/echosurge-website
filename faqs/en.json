@@ -1,0 +1,44 @@
+[
+  {
+    "category": "General",
+    "faqs": [
+      {
+        "id": "what-is-echosurge",
+        "question": "What is EchoSurge?",
+        "answer": "EchoSurge is a pioneering technology startup focused on GEO services and AI communication technology.",
+        "title": "What is EchoSurge? | EchoSurge FAQ",
+        "description": "Learn about EchoSurge, a technology startup focused on GEO services and AI communication.",
+        "keywords": ["EchoSurge", "about", "GEO services", "AI communication"]
+      },
+      {
+        "id": "how-to-contact-support",
+        "question": "How do I contact support?",
+        "answer": "You can contact our support team by emailing [hello@echosurge.ai](mailto:hello@echosurge.ai).\n\n**Support is available for:**\n\n- Technical issues\n- Billing questions\n- General inquiries\n\nFor more information, visit our [Contact Page](/en/contact).",
+        "title": "How do I contact support? | EchoSurge FAQ",
+        "description": "Find out how to contact EchoSurge support for assistance.",
+        "keywords": ["support", "contact", "help", "EchoSurge"]
+      }
+    ]
+  },
+  {
+    "category": "Billing",
+    "faqs": [
+      {
+        "id": "how-to-update-billing-info",
+        "question": "How do I update my billing information?",
+        "answer": "To update your billing information, go to your account settings and click on **Billing**.\n\n1. Navigate to [Account Settings](/en/account).\n2. Click on the **Billing** tab.\n3. Update your payment details.\n\nIf you need help, contact [support](mailto:hello@echosurge.ai).",
+        "title": "How do I update my billing information? | EchoSurge FAQ",
+        "description": "Instructions for updating your billing information with EchoSurge.",
+        "keywords": ["billing", "update", "payment", "EchoSurge"]
+      },
+      {
+        "id": "can-i-get-a-refund",
+        "question": "Can I get a refund?",
+        "answer": "Refunds are handled on a case-by-case basis. Please review our [Refund Policy](/en/refund-policy) and contact support if you believe you are eligible.",
+        "title": "Can I get a refund? | EchoSurge FAQ",
+        "description": "Learn about EchoSurge's refund policy and how to request a refund.",
+        "keywords": ["refund", "policy", "EchoSurge"]
+      }
+    ]
+  }
+] 

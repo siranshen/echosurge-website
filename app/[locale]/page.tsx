@@ -6,7 +6,7 @@ import { Header } from '@/components/Header'
 import { AiLogoCarousel } from '@/components/AiLogoCarousel'
 import Image from 'next/image'
 import { EchoMonitor } from '@/components/EchoMonitor'
-import { Faq } from '@/components/Faq'
+import { FaqAccordion } from '@/components/Faq'
 import { Footer } from '@/components/Footer'
 import { useState } from 'react'
 import { ContactModal } from '@/components/ContactModal'
@@ -120,7 +120,7 @@ export default function HomePage() {
 
         <section id='faq' className='relative py-[80px] flex flex-col items-center'>
           <h1 className='text-xl md:text-2xl lg:text-3xl text-[var(--branded-blue)]'>{t('faqSection')}</h1>
-          <Faq />
+          <FaqAccordion />
         </section>
 
         <section id='subscribe'>

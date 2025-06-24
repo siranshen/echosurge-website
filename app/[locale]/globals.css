@@ -108,3 +108,33 @@ body {
 .AccordionContent[data-state='closed'] {
   animation: slideUp 300ms ease-out;
 }
+
+.prose {
+  color: var(--foreground);
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: var(--branded-blue);
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.prose p {
+  margin-bottom: 0.5em;
+}
+.prose ul, .prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+.prose li {
+  list-style-type: disc;
+}
+.prose a {
+  color: var(--branded-blue);
+  text-decoration: underline;
+}
+.prose strong {
+  font-weight: bold;
+}

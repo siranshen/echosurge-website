@@ -1,8 +1,11 @@
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import Link from 'next/link'
+import { ChevronRight } from 'lucide-react'
 
-export function Faq() {
+export function FaqAccordion() {
   const t = useTranslations('Faq')
+  const locale = useLocale()
   const faqItems = ['whatIsGEO', 'diffGEOSEO', 'platforms', 'businesses', 'results']
 
   return (
@@ -19,6 +22,16 @@ export function Faq() {
           </AccordionItem>
         ))}
       </Accordion>
+
+      <div className='mt-4 flex justify-center'>
+        <Link
+          href={`/${locale}/faq`}
+          className="flex items-center gap-1 text-[var(--branded-blue)] hover:underline transition"
+        >
+          {t('seeAllFaqs')}
+          <ChevronRight className="h-4 w-4" />
+        </Link>
+      </div>
     </div>
   )
 }
