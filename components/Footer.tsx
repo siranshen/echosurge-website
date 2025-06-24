@@ -23,8 +23,8 @@ export function Footer() {
               <a href='mailto:hello@echosurge.ai'>{t('contact')}</a>
             </div>
             <div className='flex flex-col gap-1'>
-              <a href='#'>{t('privacyPolicy')}</a>
-              <a href='#'>{t('termsOfService')}</a>
+              <a href={`/${locale}/privacy`}>{t('privacyPolicy')}</a>
+              <a href={`/${locale}/terms`}>{t('termsOfService')}</a>
             </div>
           </div>
         </div>
