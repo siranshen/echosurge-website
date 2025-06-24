@@ -1,14 +1,10 @@
 'use client'
 
-import { useLocale, useTranslations } from 'next-intl'
-import { Button } from '@/components/ui/button'
+import { useLocale } from 'next-intl'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { useState } from 'react'
-import { ContactModal } from '@/components/ContactModal'
 
 export default function PrivacyPolicyPage() {
-  const [isContactModalOpen, setContactModalOpen] = useState(false)
   const locale = useLocale()
   const isEnglish = locale === 'en'
 

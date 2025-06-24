@@ -15,7 +15,7 @@ export default function TermsOfServicePage() {
         {isEnglish ? (
           <>
             <h1 className="text-4xl md:text-5xl font-bold mb-10">Terms of Service</h1>
-            <p className="mb-10">These Terms of Service ("Terms") govern your use of the EchoSurge website and services. By accessing or using our site, you agree to these Terms.</p>
+            <p className="mb-10">These Terms of Service (&quot;Terms&quot;) govern your use of the EchoSurge website and services. By accessing or using our site, you agree to these Terms.</p>
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">1. Acceptance of Terms</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">6. Disclaimers & Limitation of Liability</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
-                <li>Our services are provided "as is" without warranties of any kind.</li>
+                <li>Our services are provided &quot;as is&quot; without warranties of any kind.</li>
                 <li>To the fullest extent permitted by law, EchoSurge is not liable for any damages arising from your use of our services.</li>
               </ul>
             </section>
@@ -73,7 +73,7 @@ export default function TermsOfServicePage() {
         ) : (
           <>
             <h1 className="text-4xl md:text-5xl font-bold mb-10">服务条款</h1>
-            <p className="mb-10">本服务条款（"条款"）适用于您对回声谷（EchoSurge）网站及服务的使用。访问或使用本网站即表示您同意遵守本条款。</p>
+            <p className="mb-10">本服务条款（&quot;条款&quot;）适用于您对回声谷（EchoSurge）网站及服务的使用。访问或使用本网站即表示您同意遵守本条款。</p>
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">1. 条款的接受</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
@@ -111,7 +111,7 @@ export default function TermsOfServicePage() {
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">6. 免责声明与责任限制</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
-                <li>我们的服务按"现状"提供，不作任何明示或暗示的保证。</li>
+                <li>我们的服务按&quot;现状&quot;提供，不作任何明示或暗示的保证。</li>
                 <li>在法律允许的最大范围内，回声谷不对因您使用服务而产生的任何损失承担责任。</li>
               </ul>
             </section>

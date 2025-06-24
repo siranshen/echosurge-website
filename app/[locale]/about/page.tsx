@@ -1,6 +1,6 @@
 'use client'
 
-import { useLocale, useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
@@ -33,13 +33,13 @@ export default function AboutPage() {
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">Our Experience & Methodology</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
-                <li><b>Validated by Top-Tier Clients:</b> Our core members have led strategy and execution for many of the world's most iconic brands. Our experience includes:
+                <li><b>Validated by Top-Tier Clients:</b> Our core members have led strategy and execution for many of the world&apos;s most iconic brands. Our experience includes:
                   <ul className="list-disc pl-6 mt-2 space-y-1">
                     <li>World-leading beverage corporations</li>
                     <li>Top-tier French luxury fashion houses</li>
                     <li>Renowned British luxury automotive manufacturers</li>
                     <li>World-leading athletic apparel brands</li>
-                    <li>The world's largest coffeehouse chains</li>
+                    <li>The world&apos;s largest coffeehouse chains</li>
                     <li>Leading Asian coatings manufacturers</li>
                     <li>Large multinational retail groups</li>
                   </ul>
@@ -58,7 +58,7 @@ export default function AboutPage() {
         ) : (
           <>
             <h1 className="text-4xl md:text-5xl font-bold mb-10">关于我们</h1>
-            <p className="mb-10">回声谷 (EchoSurge) 是全球范围内率先专注GEO方向服务的科技创业公司，也是这个领域最早的"吃螃蟹的人"。我们汇聚了一批拥有优秀工作及学术背景、志同道合的伙伴，共同致力于打造AI时代的传播科技新范式。我们是一支创新型公司，一支汇聚了数字营销、技术产品、品牌战略等多元背景的专业团队。</p>
+            <p className="mb-10">回声谷 (EchoSurge) 是全球范围内率先专注GEO方向服务的科技创业公司，也是这个领域最早的&quot;吃螃蟹的人&quot;。我们汇聚了一批拥有优秀工作及学术背景、志同道合的伙伴，共同致力于打造AI时代的传播科技新范式。我们是一支创新型公司，一支汇聚了数字营销、技术产品、品牌战略等多元背景的专业团队。</p>
             <section className="mb-10">
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">我们的团队</h2>
               <ul className="list-disc pl-6 space-y-2 text-base">
