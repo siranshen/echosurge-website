@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
-import faqsEn from '../../../../faqs/en.json'
-import faqsZh from '../../../../faqs/zh.json'
+import faqsEn from '../../../../faqs/en-us.json'
+import faqsZh from '../../../../faqs/zh-cn.json'
 import FaqDetailClient from './FaqDetailClient'
 import { Metadata } from 'next'
 
@@ -19,8 +19,8 @@ type FaqCategory = {
 }
 
 const faqs: Record<string, FaqItem[]> = {
-  en: (faqsEn as FaqCategory[]).flatMap(cat => cat.faqs),
-  zh: (faqsZh as FaqCategory[]).flatMap(cat => cat.faqs),
+  'en-us': (faqsEn as FaqCategory[]).flatMap((cat) => cat.faqs),
+  'zh-cn': (faqsZh as FaqCategory[]).flatMap((cat) => cat.faqs),
 }
 
 export default async function FaqDetailPage({ params }: { params: Promise<{ locale: string, id: string }> }) {

@@ -8,7 +8,7 @@ import { ContactModal } from '@/components/ContactModal'
 
 export default function AboutPageClient({ locale }: { locale: string }) {
   const [isContactModalOpen, setContactModalOpen] = useState(false)
-  const isEnglish = locale === 'en'
+  const isEnglish = locale.startsWith('en')
 
   return (
     <main>

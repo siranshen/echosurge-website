@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 
 export default function TermsOfServicePage() {
   const locale = useLocale()
-  const isEnglish = locale === 'en'
+  const isEnglish = locale.startsWith('en')
 
   return (
     <main>

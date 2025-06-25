@@ -5,7 +5,7 @@ export function Footer() {
   const t = useTranslations('Footer')
   const locale = useLocale()
 
-  const logoSrc = locale === 'zh' ? '/logo-zh.svg' : '/logo.svg'
+  const logoSrc = locale === 'zh-cn' ? '/logo-zh.svg' : '/logo.svg'
 
   return (
     <footer

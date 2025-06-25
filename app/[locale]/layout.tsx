@@ -47,24 +47,16 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale)
 
-  const fontClassName = locale === 'zh' ? `${notoSansSC.variable} font-sans` : `${hostGrotesk.variable} font-sans`
+  const fontClassName = locale.startsWith('zh') ? `${notoSansSC.variable} font-sans` : `${hostGrotesk.variable} font-sans`
 
   return (
     <html lang={locale}>
-      <head>
-        {/* 这里可以放 meta、title 等 */}
-      </head>
+      <head>{/* 这里可以放 meta、title 等 */}</head>
       <body className={fontClassName}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <Script
-          src="https://hm.baidu.com/hm.js?54385ebe505504cafad559dd840b349f"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-J2W6PVM2NK"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script src='https://hm.baidu.com/hm.js?54385ebe505504cafad559dd840b349f' strategy='afterInteractive' />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-J2W6PVM2NK' strategy='afterInteractive' />
+        <Script id='gtag-init' strategy='afterInteractive'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

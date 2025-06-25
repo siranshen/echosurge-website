@@ -31,7 +31,7 @@ export function Header() {
     { href: 'mailto:hello@echosurge.ai', label: t('contact') },
   ]
 
-  const logoSrc = locale === 'zh' ? '/logo-zh.svg' : '/logo.svg'
+  const logoSrc = locale === 'zh-cn' ? '/logo-zh.svg' : '/logo.svg'
 
   const localeSwitcher = (
     <DropdownMenu>
@@ -41,8 +41,8 @@ export function Header() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        <DropdownMenuItem onClick={() => changeLocale('en')}>English</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('zh')}>中文</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('en-us')}>English</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('zh-cn')}>中文</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
@@ -66,7 +66,7 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <div className='hidden md:flex items-center'>{localeSwitcher}</div>
+            {process.env.NEXT_PUBLIC_IS_CN ? null : <div className='hidden md:flex items-center'>{localeSwitcher}</div>}
             <Button size='sm' className='md:ml-2' onClick={() => setIsModalOpen(true)}>
               {t('getDemo')}
             </Button>
@@ -100,7 +100,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div>{localeSwitcher}</div>
+            {process.env.NEXT_PUBLIC_IS_CN ? null : <div>{localeSwitcher}</div>}
           </nav>
         </div>
       )}

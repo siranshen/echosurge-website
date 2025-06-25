@@ -1,15 +1,15 @@
 'use client'
 
 import Link from 'next/link'
-import faqsEn from '../../../faqs/en.json'
-import faqsZh from '../../../faqs/zh.json'
+import faqsEn from '../../../faqs/en-us.json'
+import faqsZh from '../../../faqs/zh-cn.json'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ChevronRight } from 'lucide-react'
 
 const faqs: Record<string, { category: string; faqs: FaqItem[] }[]> = {
-  en: faqsEn,
-  zh: faqsZh,
+  'en-us': faqsEn,
+  'zh-cn': faqsZh,
 }
 
 type FaqItem = {
