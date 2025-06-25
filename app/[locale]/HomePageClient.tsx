@@ -38,21 +38,21 @@ export default function HomePageClient({ locale }: { locale: string }) {
           </div>
 
           <div className='relative pt-[100px]'>
-            {locale === 'en' ? (
-              <>
-                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
-                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
-                <div className='mt-4'>
-                  <AiLogoCarousel locale={locale} />
-                </div>
-              </>
-            ) : (
+            {locale.startsWith('zh') ? (
               <>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
                 <div className='mt-4'>
                   <AiLogoCarousel locale={locale} />
                 </div>
                 <h1 className='mt-4 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
+              </>
+            ) : (
+              <>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart2')}</h1>
+                <div className='mt-4'>
+                  <AiLogoCarousel locale={locale} />
+                </div>
               </>
             )}
             <p className='mt-10 text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto'>{t('heroSubtitle')}</p>
