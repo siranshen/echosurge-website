@@ -12,10 +12,6 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
-  "NotFound": {
-    "notFoundTitle": "404 – Page Not Found",
-    "notFoundMessage": "Sorry, the page you are looking for does not exist."
-  },
   "HomePage": {
     "metadataTitle": "EchoSurge - GEO Solution",
     "metadataDescription": "EchoSurge is a pioneering technology startup focused globally on GEO services and one of the first movers in this field. We have brought together a group of like-minded partners with exceptional professional and academic backgrounds, all dedicated to building a new paradigm of communication technology for the AI era.",

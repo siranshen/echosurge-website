@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Link from 'next/link'
 import faqsEn from '../../../faqs/en.json'
@@ -40,13 +40,10 @@ export default function FaqListClient({ locale }: { locale: string }) {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
               {cat.faqs.map((faq) => (
                 <div key={faq.id} className='flex items-start gap-2 text-sm md:text-base'>
-                  <div className='w-6 flex items-center justify-center'>
+                  <div className='w-5 h-5 md:w-6 md:h-6 flex items-center justify-center'>
                     <ChevronRight className='text-[var(--branded-blue)]' />
                   </div>
-                  <Link
-                    href={`/${locale}/faq/${faq.id}`}
-                    className='hover:underline'
-                  >
+                  <Link href={`/${locale}/faq/${faq.id}`} className='hover:underline'>
                     <span className='font-medium'>{faq.question}</span>
                   </Link>
                 </div>
@@ -58,4 +55,4 @@ export default function FaqListClient({ locale }: { locale: string }) {
       <Footer />
     </div>
   )
-} 
+}
