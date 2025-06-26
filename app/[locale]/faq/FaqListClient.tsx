@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import faqsEn from '../../../faqs/en-us.json'
-import faqsZh from '../../../faqs/zh-cn.json'
+import faqsEn from '@/faqs/en-us.json'
+import faqsZh from '@/faqs/zh-cn.json'
+import { FaqCategory, FaqItem } from '@/faqs/types'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ChevronRight } from 'lucide-react'
@@ -10,20 +11,6 @@ import { ChevronRight } from 'lucide-react'
 const faqs: Record<string, { category: string; faqs: FaqItem[] }[]> = {
   'en-us': faqsEn,
   'zh-cn': faqsZh,
-}
-
-type FaqItem = {
-  id: string
-  question: string
-  answer: string
-  title: string
-  description: string
-  keywords: string[]
-}
-
-type FaqCategory = {
-  category: string
-  faqs: FaqItem[]
 }
 
 export default function FaqListClient({ locale }: { locale: string }) {
