@@ -1,0 +1,93 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "getDemo": "Obtener demo"
+  },
+  "Footer": {
+    "copyright": "© 2025 EchoSurge. Todos los derechos reservados.",
+    "about": "Acerca de nosotros",
+    "contact": "Contacto",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
+  },
+  "HomePage": {
+    "metadataTitle": "EchoSurge - Solución GEO",
+    "metadataDescription": "EchoSurge es una startup tecnológica pionera enfocada globalmente en servicios GEO y uno de los primeros actores en este campo. Hemos reunido un grupo de socios con ideas afines con antecedentes profesionales y académicos excepcionales, todos dedicados a construir un nuevo paradigma de tecnología de comunicación para la era de la IA.",
+    "metadataKeywords": "Deepseek GEO, Gemini GEO, Claude GEO, ChatGPT GEO, EchoSurge",
+    "heroTitlePart1": "Haz que tu marca",
+    "heroTitlePart2": "sea parte de la respuesta por",
+    "heroSubtitle": "Tu puerta de entrada al tráfico de la era IA",
+    "getDemo": "Obtener demo",
+    "servicesSection": "Lo que hacemos",
+    "servicesTitle": "Solución GEO integral",
+    "servicesDescription": "Aprovechando una comprensión profunda de la distribución del tráfico en los principales modelos de lenguaje y plataformas de redes sociales, proporcionamos soluciones integrales para empresas — desde diagnóstico estratégico y optimización de rastreabilidad de modelos hasta ejecución de contenido y monitoreo de rendimiento.",
+    "earlyAccessTitle": "¿Quieres saber con qué frecuencia la IA menciona tu marca?",
+    "earlyAccessButton": "Contáctanos para obtener acceso anticipado",
+    "faqSection": "Preguntas frecuentes",
+    "subscribeTitle": "EchoSurge ayuda a las marcas a aprovechar la próxima ola de tráfico de búsqueda IA, construyendo visibilidad e influencia futuras.",
+    "subscribeSubtitle": "Suscríbete a los ecos para las últimas noticias sobre GEO."
+  },
+  "Faq": {
+    "metadataTitle": "Preguntas frecuentes - EchoSurge",
+    "metadataDescription": "Puedes encontrar contenido relacionado con GEO en las preguntas frecuentes, que pueden responder tus preguntas relacionadas con la industria.",
+    "metadataKeywords": "EchoSurge, SEO IA, SEO LLM, GEO cerebralvalley, GEO deepseek",
+    "faqTitle": "Preguntas frecuentes",
+    "seeAllFaqs": "Ver todas las preguntas frecuentes",
+    "backToFaqs": "Volver a las preguntas frecuentes",
+    "whatIsGEO": {
+      "question": "¿Qué es GEO?",
+      "answer": "GEO (Optimización de Motores Generativos) es un campo de vanguardia que ayuda a las marcas a destacar y rendir mejor en las principales plataformas impulsadas por IA como ChatGPT, Perplexity, Claude y Gemini."
+    },
+    "diffGEOSEO": {
+      "question": "¿Cuál es la diferencia entre GEO y SEO?",
+      "answer": "Mientras que el SEO se enfoca en el posicionamiento en motores de búsqueda tradicionales como Google, GEO está específicamente diseñado para la visibilidad y el rendimiento en plataformas de IA generativa. Es la próxima evolución de la optimización de búsqueda."
+    },
+    "platforms": {
+      "question": "¿Qué plataformas de IA cubre EchoSurge?",
+      "answer": "Cubrimos todas las principales plataformas de IA, incluyendo ChatGPT, Perplexity, Claude y Gemini, asegurando que tu marca tenga una presencia consistente y poderosa en todo el ecosistema de IA."
+    },
+    "businesses": {
+      "question": "¿Qué tipos de empresas o marcas son más adecuadas para EchoSurge?",
+      "answer": "EchoSurge es ideal para cualquier empresa o marca que quiera ser líder en la era de la IA. Ya seas una startup o una empresa establecida, nuestra plataforma puede ayudarte a conectar con tu audiencia en este nuevo panorama."
+    },
+    "results": {
+      "question": "¿Cuándo puedo esperar ver resultados de crecimiento?",
+      "answer": "Aunque los resultados pueden variar, nuestros clientes típicamente comienzan a ver mejoras medibles en la visibilidad y el compromiso de la marca dentro de las primeras semanas de implementar nuestras estrategias GEO."
+    }
+  },
+  "EchoMonitor": {
+    "EchoMonitor": "EchoMonitor",
+    "brandA": "Marca A"
+  },
+  "ContactModal": {
+    "contactModalTitle": "Háblanos",
+    "name": "Nombre completo *",
+    "company": "Nombre de la empresa *",
+    "email": "Email de trabajo *",
+    "phone": "Número de teléfono",
+    "purpose": "¿De qué quieres hablar? *",
+    "purposeConsult": "Consultar exposición IA",
+    "purposeCollaboration": "Colaboración y personalización",
+    "purposeMedia": "Entrevistas de medios",
+    "purposeOther": "Otro",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Gracias por tu mensaje! Te responderemos pronto.",
+    "error": "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "SubscribeForm": {
+    "placeholder": "Tu email",
+    "subscribe": "Suscribirse",
+    "submitting": "Enviando...",
+    "success": "¡Gracias por suscribirte!",
+    "error": "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "AboutPage": {
+    "metadataTitle": "Acerca de nosotros - EchoSurge",
+    "metadataDescription": "Somos una empresa innovadora y un equipo profesional, uniendo experiencia diversa en marketing digital, productos tecnológicos y estrategia de marca. Nuestros miembros del equipo provienen de gigantes de la publicidad y tecnología de clase mundial, incluyendo WPP, GroupM, Dentsu, Baidu, ByteDance, Google, AWS y Microsoft. Tenemos amplia experiencia sirviendo a una clientela global en industrias clave, incluyendo bienes de consumo, automotriz, lujo, tecnología y SaaS internacional.",
+    "metadataKeywords": "Deepseek GEO, SEO IA, ChatGPT GEO, Gemini GEO, GEO cerebralvalley",
+    "contactUs": "Contáctanos"
+  }
+}

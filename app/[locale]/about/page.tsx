@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import AboutPageClient from './AboutPageClient'
+import { getMarkdownContent } from '@/lib/markdown'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -14,5 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  return <AboutPageClient locale={locale} />
-} 
+  const content = await getMarkdownContent(locale, 'about')
+
+  return <AboutPageClient content={content} />
+}

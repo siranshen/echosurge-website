@@ -22,7 +22,7 @@
     "getDemo": "Get a Demo",
     "servicesSection": "What We Do",
     "servicesTitle": "End-to-end GEO Solution",
-    "servicesDescription": "Leveraging a deep understanding of traffic distribution across mainstream large language models and social media platforms, we provide end-to-end solutions for businesses — from strategic diagnosis and model capture optimization to content execution and performance monitoring.",
+    "servicesDescription": "Leveraging a deep understanding of traffic distribution across mainstream large language models and social media platforms, we provide end-to-end solutions for businesses — from strategic diagnosis and model crawlability optimization to content execution and performance monitoring.",
     "earlyAccessTitle": "Want to know how often AI mentions your brand?",
     "earlyAccessButton": "Contact us to get early access",
     "faqSection": "FAQs",
@@ -33,6 +33,7 @@
     "metadataTitle": "FAQs - EchoSurge",
     "metadataDescription": "You can find GEO-related content in the FAQ, which can answer your industry-related questions.",
     "metadataKeywords": "EchoSurge, AI SEO, LLM SEO, cerebralvalley GEO, deepseek GEO",
+    "faqTitle": "Frequently Asked Questions",
     "seeAllFaqs": "See all FAQs",
     "backToFaqs": "Back to FAQs",
     "whatIsGEO": {
@@ -86,6 +87,7 @@
   "AboutPage": {
     "metadataTitle": "About Us - EchoSurge",
     "metadataDescription": "We are an innovative company and a professional team, uniting diverse expertise in digital marketing, technology products, and brand strategy. Our team members come from world-class advertising and technology giants, including WPP, GroupM, Dentsu, Baidu, ByteDance, Google, AWS, and Microsoft. We have extensive experience serving a global clientele across key industries, including consumer goods, automotive, luxury, technology, and international SaaS.",
-    "metadataKeywords": "Deepseek GEO, AI SEO, ChatGPT GEO, Gemini GEO, cerebralvalley GEO"
+    "metadataKeywords": "Deepseek GEO, AI SEO, ChatGPT GEO, Gemini GEO, cerebralvalley GEO",
+    "contactUs": "Contact Us"
   }
 }

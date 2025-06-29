@@ -1,0 +1,93 @@
+{
+  "Header": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "getDemo": "デモを取得"
+  },
+  "Footer": {
+    "copyright": "© 2025 EchoSurge. All rights reserved.",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  },
+  "HomePage": {
+    "metadataTitle": "EchoSurge - GEOソリューション",
+    "metadataDescription": "EchoSurgeは、世界的にGEOサービスに焦点を当てた先駆的なテクノロジースタートアップで、この分野の最初の参入者の一つです。私たちは、卓越した専門的・学術的背景を持つ志を同じくするパートナーのグループを集め、AI時代のコミュニケーションテクノロジーの新しいパラダイムを構築することに専念しています。",
+    "metadataKeywords": "Deepseek GEO, Gemini GEO, Claude GEO, ChatGPT GEO, EchoSurge",
+    "heroTitlePart1": "あなたのブランドを",
+    "heroTitlePart2": "の回答に登場させる",
+    "heroSubtitle": "AI時代のトラフィックへのゲートウェイ",
+    "getDemo": "デモを取得",
+    "servicesSection": "私たちのサービス",
+    "servicesTitle": "エンドツーエンドGEOソリューション",
+    "servicesDescription": "メインストリームの大規模言語モデルやソーシャルメディアプラットフォーム全体でのトラフィック配分に対する深い理解を活用し、企業向けのエンドツーエンドソリューションを提供します — 戦略的診断とモデルクローラビリティ最適化からコンテンツ実行とパフォーマンス監視まで。",
+    "earlyAccessTitle": "AIがあなたのブランドをどのくらい頻繁に言及しているか知りたいですか？",
+    "earlyAccessButton": "早期アクセスを取得するにはお問い合わせください",
+    "faqSection": "よくある質問",
+    "subscribeTitle": "EchoSurgeは、ブランドが次のAI検索トラフィックの波を活用し、将来の可視性と影響力を構築するのを支援します。",
+    "subscribeSubtitle": "GEOに関する最新の洞察を得るためにエコーに登録してください。"
+  },
+  "Faq": {
+    "metadataTitle": "よくある質問 - EchoSurge",
+    "metadataDescription": "FAQでGEO関連のコンテンツを見つけることができ、業界関連の質問に答えることができます。",
+    "metadataKeywords": "EchoSurge, AI SEO, LLM SEO, cerebralvalley GEO, deepseek GEO",
+    "faqTitle": "よくある質問",
+    "seeAllFaqs": "すべてのFAQを見る",
+    "backToFaqs": "FAQに戻る",
+    "whatIsGEO": {
+      "question": "GEOとは何ですか？",
+      "answer": "GEO（生成エンジン最適化）は、ChatGPT、Perplexity、Claude、Geminiなどの主要なAI駆動プラットフォームでブランドが目立ち、より良いパフォーマンスを発揮するのを支援する最先端の分野です。"
+    },
+    "diffGEOSEO": {
+      "question": "GEOとSEOの違いは何ですか？",
+      "answer": "SEOがGoogleなどの従来の検索エンジンでのランキングに焦点を当てているのに対し、GEOは生成AIプラットフォームでの可視性とパフォーマンスに特化して設計されています。これは検索最適化の次の進化です。"
+    },
+    "platforms": {
+      "question": "EchoSurgeはどのAIプラットフォームをカバーしていますか？",
+      "answer": "ChatGPT、Perplexity、Claude、Geminiを含むすべての主要なAIプラットフォームをカバーし、あなたのブランドがAIエコシステム全体で一貫した強力な存在感を持つことを保証します。"
+    },
+    "businesses": {
+      "question": "EchoSurgeはどのようなタイプの企業やブランドに最適ですか？",
+      "answer": "EchoSurgeは、AI時代のリーダーになりたい企業やブランドに理想的です。スタートアップであろうと確立された企業であろうと、私たちのプラットフォームはこの新しい環境でオーディエンスとつながるのを支援できます。"
+    },
+    "results": {
+      "question": "成長結果はいつ頃見ることができますか？",
+      "answer": "結果は異なる場合がありますが、私たちのクライアントは通常、GEO戦略を実装してから最初の数週間以内にブランドの可視性とエンゲージメントの測定可能な改善を見始めます。"
+    }
+  },
+  "EchoMonitor": {
+    "EchoMonitor": "EchoMonitor",
+    "brandA": "ブランドA"
+  },
+  "ContactModal": {
+    "contactModalTitle": "お話ししましょう",
+    "name": "氏名 *",
+    "company": "会社名 *",
+    "email": "仕事用メール *",
+    "phone": "電話番号",
+    "purpose": "何についてお話ししたいですか？ *",
+    "purposeConsult": "AI露出の相談",
+    "purposeCollaboration": "コラボレーションとカスタマイズ",
+    "purposeMedia": "メディアインタビュー",
+    "purposeOther": "その他",
+    "submit": "送信",
+    "submitting": "送信中...",
+    "success": "メッセージをありがとうございます！すぐにご連絡いたします。",
+    "error": "申し訳ございません！何か問題が発生しました。後でもう一度お試しください。"
+  },
+  "SubscribeForm": {
+    "placeholder": "あなたのメール",
+    "subscribe": "登録",
+    "submitting": "送信中...",
+    "success": "登録ありがとうございます！",
+    "error": "申し訳ございません！何か問題が発生しました。後でもう一度お試しください。"
+  },
+  "AboutPage": {
+    "metadataTitle": "会社概要 - EchoSurge",
+    "metadataDescription": "私たちは革新的な企業であり、デジタルマーケティング、テクノロジープロダクト、ブランド戦略における多様な専門知識を統合するプロフェッショナルチームです。私たちのチームメンバーは、WPP、GroupM、Dentsu、Baidu、ByteDance、Google、AWS、Microsoftなどの世界クラスの広告・テクノロジー大手出身です。消費財、自動車、奢侈品、テクノロジー、国際SaaSなどの主要業界でグローバルな顧客にサービスを提供する豊富な経験があります。",
+    "metadataKeywords": "Deepseek GEO, AI SEO, ChatGPT GEO, Gemini GEO, cerebralvalley GEO",
+    "contactUs": "お問い合わせ"
+  }
+}

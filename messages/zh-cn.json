@@ -34,6 +34,7 @@
     "metadataTitle": "常见问题 FAQ - 回声谷 EchoSurge",
     "metadataDescription": "您可以在FAQ中找到关于GEO的相关内容，能够回答您行业相关的问题",
     "metadataKeywords": "回声谷,EchoSurge,FAQ,GEO,LLM SEO",
+    "faqTitle": "常见问题",
     "seeAllFaqs": "查看所有常见问题",
     "backToFaqs": "返回常见问题",
     "whatIsGEO": {
@@ -87,6 +88,7 @@
   "AboutPage": {
     "metadataTitle": "关于我们 - 回声谷 EchoSurge",
     "metadataDescription": "我们是一支创新型公司，一支汇聚了数字营销、技术产品、品牌战略等多元背景的专业团队。团队成员来自 WPP、群邑、电通、百度、字节跳动、Google、AWS、Microsoft 等世界级广告与科技巨头。我们拥有丰富的全球化客户服务经验，业务涵盖消费品、汽车、奢侈品、科技、出海SaaS等多个核心行业。",
-    "metadataKeywords": "回声谷,EchoSurge,关于我们,GEO,LLM SEO"
+    "metadataKeywords": "回声谷,EchoSurge,关于我们,GEO,LLM SEO",
+    "contactUs": "联系我们"
   }
 }

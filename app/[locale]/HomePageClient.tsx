@@ -38,7 +38,7 @@ export default function HomePageClient({ locale }: { locale: string }) {
           </div>
 
           <div className='relative pt-[100px]'>
-            {locale.startsWith('zh') ? (
+            {locale.startsWith('zh') || locale === 'ja' ? (
               <>
                 <h1 className='text-3xl md:text-4xl lg:text-5xl font-medium leading-tight'>{t('heroTitlePart1')}</h1>
                 <div className='mt-4'>

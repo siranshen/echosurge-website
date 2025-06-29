@@ -42,6 +42,9 @@ export function Header() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
         <DropdownMenuItem onClick={() => changeLocale('en-us')}>English</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('es')}>Español</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('fr')}>Français</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('ja')}>日本語</DropdownMenuItem>
         <DropdownMenuItem onClick={() => changeLocale('zh-cn')}>中文</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

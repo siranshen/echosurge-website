@@ -1,27 +1,21 @@
 'use client'
 
 import Link from 'next/link'
-import faqsEn from '@/faqs/en-us.json'
-import faqsZh from '@/faqs/zh-cn.json'
-import { FaqCategory, FaqItem } from '@/faqs/types'
+import { FaqCategory } from '@/faqs/types'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ChevronRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
-const faqs: Record<string, { category: string; faqs: FaqItem[] }[]> = {
-  'en-us': faqsEn,
-  'zh-cn': faqsZh,
-}
-
-export default function FaqListClient({ locale }: { locale: string }) {
-  const categories: FaqCategory[] = faqs[locale] || []
+export default function FaqListClient({ locale, faqCats }: { locale: string; faqCats: FaqCategory[] }) {
+  const t = useTranslations('Faq')
 
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-3xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
-        <h1 className='text-4xl md:text-5xl font-bold mb-10'>FAQs</h1>
-        {categories.map((cat) => (
+        <h1 className='text-4xl md:text-5xl font-bold mb-10'>{t('faqTitle')}</h1>
+        {faqCats.map((cat) => (
           <section key={cat.category} className='mb-10'>
             <h2 className='text-2xl font-semibold mb-4'>{cat.category}</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

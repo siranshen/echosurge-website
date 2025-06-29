@@ -1,18 +1,16 @@
 import { notFound } from 'next/navigation'
-import faqsEn from '@/faqs/en-us.json'
-import faqsZh from '@/faqs/zh-cn.json'
 import { FaqCategory, FaqItem } from '@/faqs/types'
 import FaqDetailClient from './FaqDetailClient'
 import { Metadata } from 'next'
 
-const faqs: Record<string, FaqItem[]> = {
-  'en-us': (faqsEn as FaqCategory[]).flatMap((cat) => cat.faqs),
-  'zh-cn': (faqsZh as FaqCategory[]).flatMap((cat) => cat.faqs),
+async function getFaqList(locale: string): Promise<FaqItem[]> {
+  const { default: faqs } = await import(`@/faqs/${locale}.json`)
+  return faqs.flatMap((cat: FaqCategory) => cat.faqs)
 }
 
 export default async function FaqDetailPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
   const { locale, id } = await params
-  const faqList: FaqItem[] = faqs[locale] || []
+  const faqList = await getFaqList(locale)
   const faq = faqList.find((f) => f.id === id)
   if (!faq) notFound()
   return <FaqDetailClient faq={faq} locale={locale} />
@@ -20,7 +18,7 @@ export default async function FaqDetailPage({ params }: { params: Promise<{ loca
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }): Promise<Metadata> {
   const { locale, id } = await params
-  const faqList: FaqItem[] = faqs[locale] || []
+  const faqList = await getFaqList(locale)
   const faq = faqList.find((f) => f.id === id)
   if (!faq) return {}
   return {
