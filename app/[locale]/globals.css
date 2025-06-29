@@ -140,7 +140,6 @@ body {
 }
 .prose p {
   margin-bottom: 1.25rem;
-  line-height: 1.7;
 }
 .prose ul,
 .prose ol {
@@ -150,7 +149,6 @@ body {
 .prose li {
   list-style-type: disc;
   margin-bottom: 0.5rem;
-  line-height: 1.7;
 }
 .prose li ul,
 .prose li ol {

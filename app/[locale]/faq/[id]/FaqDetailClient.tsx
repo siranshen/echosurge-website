@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useTranslations } from 'next-intl'
 import ReactMarkdown from 'react-markdown'
@@ -23,19 +23,22 @@ interface FaqDetailClientProps {
 export default function FaqDetailClient({ faq, locale }: FaqDetailClientProps) {
   const t = useTranslations('Faq')
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className='min-h-screen flex flex-col'>
       <Header />
-      <main className="flex-1 max-w-2xl w-full mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]">
-        <Link href={`/${locale}/faq`} className="text-lg text-[var(--branded-blue)] hover:underline flex items-center gap-2 mb-6">
-          <ChevronLeft className="h-4 w-4" />
+      <main className='flex-1 max-w-2xl w-full mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
+        <Link
+          href={`/${locale}/faq`}
+          className='text-lg text-[var(--branded-blue)] hover:underline flex items-center gap-2 mb-6'
+        >
+          <ChevronLeft className='h-4 w-4' />
           {t('backToFaqs')}
         </Link>
-        <h1 className="text-4xl md:text-5xl font-bold mb-10">{faq.question}</h1>
-        <article className="prose max-w-none">
+        <article className='prose max-w-none'>
+          <h1>{faq.question}</h1>
           <ReactMarkdown>{faq.answer}</ReactMarkdown>
         </article>
       </main>
       <Footer />
     </div>
   )
-} 
+}

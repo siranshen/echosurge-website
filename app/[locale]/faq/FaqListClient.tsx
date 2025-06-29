@@ -14,7 +14,7 @@ export default function FaqListClient({ locale, faqCats }: { locale: string; faq
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-3xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
-        <h1 className='text-4xl md:text-5xl font-bold mb-10'>{t('faqTitle')}</h1>
+        <h1 className='text-4xl md:text-5xl leading-tight font-bold mb-10'>{t('faqTitle')}</h1>
         {faqCats.map((cat) => (
           <section key={cat.category} className='mb-10'>
             <h2 className='text-2xl font-semibold mb-4'>{cat.category}</h2>
