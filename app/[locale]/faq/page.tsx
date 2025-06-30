@@ -21,5 +21,5 @@ async function getFaqCats(locale: string): Promise<FaqCategory[]> {
 export default async function FaqListPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const faqCats = await getFaqCats(locale)
-  return <FaqListClient locale={locale} faqCats={faqCats} />
+  return <FaqListClient faqCats={faqCats} />
 }

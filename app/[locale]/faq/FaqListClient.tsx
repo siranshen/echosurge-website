@@ -1,13 +1,13 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { FaqCategory } from '@/faqs/types'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
-export default function FaqListClient({ locale, faqCats }: { locale: string; faqCats: FaqCategory[] }) {
+export default function FaqListClient({ faqCats }: { faqCats: FaqCategory[] }) {
   const t = useTranslations('Faq')
 
   return (
@@ -24,7 +24,7 @@ export default function FaqListClient({ locale, faqCats }: { locale: string; faq
                   <div className='w-5 h-5 md:w-6 md:h-6 flex items-center justify-center'>
                     <ChevronRight className='text-[var(--branded-blue)]' />
                   </div>
-                  <Link href={`/${locale}/faq/${faq.id}`} className='hover:underline'>
+                  <Link href={`/faq/${faq.id}`} className='hover:underline'>
                     <span className='font-medium'>{faq.question}</span>
                   </Link>
                 </div>

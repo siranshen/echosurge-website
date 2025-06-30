@@ -2,20 +2,19 @@ import { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import faqsEn from '@/faqs/en-us.json'
 import { FaqCategory, FaqItem } from '@/faqs/types'
-import { getLocaleUrlPath } from '@/lib/locale-utils'
+import { getPathname } from '@/i18n/navigation'
 
 const baseUrl = process.env.NEXT_PUBLIC_IS_CN ? 'https://www.echosurge.cn' : 'https://www.echosurge.ai'
-const staticRoutes = ['', '/about', '/faq', '/privacy', '/terms']
+const staticRoutes = ['/', '/about', '/faq', '/privacy', '/terms']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemap: MetadataRoute.Sitemap = []
 
   // Generate sitemap entries for each locale
   routing.locales.forEach((locale) => {
-    const localeBaseUrl = `${baseUrl}${getLocaleUrlPath(locale)}`
     // Add static routes
     staticRoutes.forEach((route) => {
-      const url = route === '' ? `${localeBaseUrl}` : `${localeBaseUrl}${route}`
+      const url = `${baseUrl}${getPathname({ locale, href: route })}`
       sitemap.push({
         url,
         lastModified: new Date(),
@@ -28,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     faqsEn.forEach((category: FaqCategory) => {
       category.faqs.forEach((faq: FaqItem) => {
         sitemap.push({
-          url: `${localeBaseUrl}/faq/${faq.id}`,
+          url: `${baseUrl}${getPathname({ locale, href: `/faq/${faq.id}` })}`,
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.6,

@@ -13,7 +13,7 @@ export default async function FaqDetailPage({ params }: { params: Promise<{ loca
   const faqList = await getFaqList(locale)
   const faq = faqList.find((f) => f.id === id)
   if (!faq) notFound()
-  return <FaqDetailClient faq={faq} locale={locale} />
+  return <FaqDetailClient faq={faq} />
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }): Promise<Metadata> {
