@@ -54,7 +54,6 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <head>{/* 这里可以放 meta、title 等 */}</head>
       <body className={fontClassName}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Script src={`https://hm.baidu.com/hm.js?${hmId}`} strategy='afterInteractive' />

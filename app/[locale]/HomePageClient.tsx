@@ -17,7 +17,7 @@ export default function HomePageClient({ locale }: { locale: string }) {
   const [isContactModalOpen, setContactModalOpen] = useState(false)
 
   return (
-    <main>
+    <>
       <Header />
       <ContactModal open={isContactModalOpen} onClose={() => setContactModalOpen(false)} />
 
@@ -28,7 +28,7 @@ export default function HomePageClient({ locale }: { locale: string }) {
         }}
       />
 
-      <div className='relative page-max-width mx-auto text-center'>
+      <main className='relative page-max-width mx-auto text-center'>
         <section
           id='hero'
           className='relative flex flex-col min-h-[680px] md:min-h-[720px] lg:min-h-[840px] px-6 overflow-hidden'
@@ -145,9 +145,9 @@ export default function HomePageClient({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
-      </div>
+      </main>
 
       <Footer />
-    </main>
+    </>
   )
 }

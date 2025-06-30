@@ -13,10 +13,10 @@ export default function AboutPageClient({ content }: { content: string }) {
   const t = useTranslations('AboutPage')
 
   return (
-    <main>
+    <>
       <Header />
       <ContactModal open={isContactModalOpen} onClose={() => setContactModalOpen(false)} />
-      <div className='relative w-full max-w-2xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
+      <main className='relative w-full max-w-2xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
         <div className='prose max-w-none'>
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
@@ -25,8 +25,8 @@ export default function AboutPageClient({ content }: { content: string }) {
             {t('contactUs')}
           </Button>
         </div>
-      </div>
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
