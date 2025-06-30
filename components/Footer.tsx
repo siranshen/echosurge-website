@@ -1,9 +1,11 @@
+import { getLocaleUrlPath } from '@/lib/locale-utils'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 
 export function Footer() {
   const t = useTranslations('Footer')
   const locale = useLocale()
+  const localePath = getLocaleUrlPath(locale)
 
   const logoSrc = locale === 'zh-cn' ? '/logo-zh.svg' : '/logo.svg'
 
@@ -19,12 +21,12 @@ export function Footer() {
           <Image src={logoSrc} alt='EchoSurge Logo' width={158} height={48} className='h-auto w-32 md:w-36 lg:w-40' />
           <div className='flex items-center gap-20 text-sm text-[var(--foreground)]'>
             <div className='flex flex-col gap-1'>
-              <a href={`/${locale}/about`}>{t('about')}</a>
+              <a href={`${localePath}/about`}>{t('about')}</a>
               <a href='mailto:hello@echosurge.ai'>{t('contact')}</a>
             </div>
             <div className='flex flex-col gap-1'>
-              <a href={`/${locale}/privacy`}>{t('privacyPolicy')}</a>
-              <a href={`/${locale}/terms`}>{t('termsOfService')}</a>
+              <a href={`${localePath}/privacy`}>{t('privacyPolicy')}</a>
+              <a href={`${localePath}/terms`}>{t('termsOfService')}</a>
             </div>
           </div>
         </div>

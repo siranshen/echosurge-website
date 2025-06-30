@@ -9,6 +9,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { ContactModal } from '@/components/ContactModal'
+import { getLocaleUrlPath } from '@/lib/locale-utils'
 
 export function Header() {
   const t = useTranslations('Header')
@@ -25,9 +26,11 @@ export function Header() {
     router.replace(newPath)
   }
 
+  const localePath = getLocaleUrlPath(locale)
+
   const navLinks = [
-    { href: `/${locale}`, label: t('home') },
-    { href: `/${locale}/about`, label: t('about') },
+    { href: localePath || '/', label: t('home') },
+    { href: `${localePath}/about`, label: t('about') },
     { href: 'mailto:hello@echosurge.ai', label: t('contact') },
   ]
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Host_Grotesk, Noto_Sans_SC, Noto_Sans_JP } from 'next/font/google'
+import { Host_Grotesk, Noto_Sans_SC } from 'next/font/google'
 import './globals.css'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
@@ -8,11 +8,6 @@ import { setRequestLocale } from 'next-intl/server'
 import Script from 'next/script'
 
 const notoSansSC = Noto_Sans_SC({
-  subsets: ['latin', 'latin-ext'],
-  display: 'swap',
-})
-
-const notoSansJP = Noto_Sans_JP({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
 })
@@ -50,11 +45,7 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale)
 
-  const fontClassName = locale.startsWith('zh')
-    ? `${notoSansSC.className}`
-    : locale === 'ja'
-    ? `${notoSansJP.className}`
-    : `${hostGrotesk.className}`
+  const fontClassName = locale.startsWith('zh') || locale === 'ja' ? `${notoSansSC.className}` : `${hostGrotesk.className}`
   const isCN = process.env.NEXT_PUBLIC_IS_CN === 'true'
   const gtagId = isCN ? 'G-4DGHG97VFD' : 'G-8EQNB4Z321'
   const hmId = isCN ? '54385ebe505504cafad559dd840b349f' : '3c24963f8914978d1b900f66a8eef4e5'
