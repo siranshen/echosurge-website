@@ -52,8 +52,6 @@
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
-  --font-host-grotesk: var(--font-host-grotesk);
-  --font-noto-sans-sc: var(--font-noto-sans-sc);
 }
 
 body {
