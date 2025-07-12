@@ -10,6 +10,7 @@
     "copyright": "© 2025 EchoSurge. All rights reserved.",
     "about": "关于我们",
     "contact": "联系我们",
+    "faq": "常见问题",
     "privacyPolicy": "隐私政策",
     "termsOfService": "服务条款"
   },
@@ -37,6 +38,10 @@
     "faqTitle": "常见问题",
     "seeAllFaqs": "查看所有常见问题",
     "backToFaqs": "返回常见问题",
+    "previous": "上一个",
+    "next": "下一个",
+    "keepReading": "继续阅读",
+    "readNow": "立即阅读",
     "whatIsGEO": {
       "question": "什么是 GEO？",
       "answer": "GEO (生成式引擎优化) 是一门新兴领域，致力于提升品牌在 ChatGPT、Perplexity、Claude 和 Gemini 等 AI 驱动平台上的可见度、定位与表现。"

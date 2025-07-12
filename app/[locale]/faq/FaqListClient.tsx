@@ -4,16 +4,19 @@ import { Link } from '@/i18n/navigation'
 import { FaqCategory } from '@/faqs/types'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { BreadcrumbNav } from '@/components/Breadcrumb'
 import { ChevronRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 export default function FaqListClient({ faqCats }: { faqCats: FaqCategory[] }) {
   const t = useTranslations('Faq')
+  const tFooter = useTranslations('Footer')
 
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main className='flex-1 max-w-3xl mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
+        <BreadcrumbNav items={[{ label: tFooter('faq'), current: true }]} />
         <h1 className='text-4xl md:text-5xl leading-tight font-bold mb-10'>{t('faqTitle')}</h1>
         {faqCats.map((cat) => (
           <section key={cat.category} className='mb-10'>

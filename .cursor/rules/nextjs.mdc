@@ -3,5 +3,5 @@ description:
 globs: 
 alwaysApply: true
 ---
-This project uses NextJS AppRouter.
+This project uses NextJS AppRouter and Shadcn.
 Indentation is 2 spaces.

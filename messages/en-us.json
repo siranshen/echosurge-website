@@ -9,6 +9,7 @@
     "copyright": "© 2025 EchoSurge. All rights reserved.",
     "about": "About Us",
     "contact": "Contact",
+    "faq": "FAQs",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
@@ -36,6 +37,10 @@
     "faqTitle": "Frequently Asked Questions",
     "seeAllFaqs": "See all FAQs",
     "backToFaqs": "Back to FAQs",
+    "previous": "Previous",
+    "next": "Next",
+    "keepReading": "Keep reading",
+    "readNow": "Read now",
     "whatIsGEO": {
       "question": "What is GEO?",
       "answer": "GEO (Generative Engine Optimization) is a cutting-edge field helping brands stand out and perform better across leading AI-powered platforms like ChatGPT, Perplexity, Claude, and Gemini."

@@ -3,11 +3,20 @@
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useRouter, usePathname, Link } from '@/i18n/navigation'
-import { Globe, Menu, X } from 'lucide-react'
+import { Check, Globe, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { ContactModal } from '@/components/ContactModal'
+
+
+const localeMap = {
+  'en-us': 'English',
+  es: 'Español',
+  fr: 'Français',
+  ja: '日本語',
+  'zh-cn': '中文',
+}
 
 export function Header() {
   const t = useTranslations('Header')
@@ -36,12 +45,19 @@ export function Header() {
           <Globe className='h-[1.2rem] w-[1.2rem]' />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end'>
-        <DropdownMenuItem onClick={() => changeLocale('en-us')}>English</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('es')}>Español</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('fr')}>Français</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('ja')}>日本語</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('zh-cn')}>中文</DropdownMenuItem>
+      <DropdownMenuContent align='end' className='bg-background border-slate-400'>
+        {Object.entries(localeMap).map(([key, label]) => (
+          locale === key ? (
+            <DropdownMenuItem className='flex items-center justify-between text-slate-500' key={key}>
+              <span>{label}</span>
+              <Check className='h-4 w-4' />
+            </DropdownMenuItem>
+          ) : (
+            <DropdownMenuItem className='cursor-pointer hover:bg-slate-100' key={key} onClick={() => changeLocale(key)}>
+              {label}
+            </DropdownMenuItem>
+          )
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   )

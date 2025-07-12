@@ -9,6 +9,7 @@
     "copyright": "© 2025 EchoSurge. All rights reserved.",
     "about": "会社概要",
     "contact": "お問い合わせ",
+    "faq": "よくある質問",
     "privacyPolicy": "プライバシーポリシー",
     "termsOfService": "利用規約"
   },
@@ -36,6 +37,10 @@
     "faqTitle": "よくある質問",
     "seeAllFaqs": "すべてのFAQを見る",
     "backToFaqs": "FAQに戻る",
+    "previous": "前へ",
+    "next": "次へ",
+    "keepReading": "続きを読む",
+    "readNow": "今すぐ読む",
     "whatIsGEO": {
       "question": "GEOとは何ですか？",
       "answer": "GEO（生成エンジン最適化）は、ChatGPT、Perplexity、Claude、Geminiなどの主要なAI駆動プラットフォームでブランドが目立ち、より良いパフォーマンスを発揮するのを支援する最先端の分野です。"

@@ -9,6 +9,7 @@
     "copyright": "© 2025 EchoSurge. Todos los derechos reservados.",
     "about": "Acerca de nosotros",
     "contact": "Contacto",
+    "faq": "Preguntas frecuentes",
     "privacyPolicy": "Política de privacidad",
     "termsOfService": "Términos de servicio"
   },
@@ -36,6 +37,10 @@
     "faqTitle": "Preguntas frecuentes",
     "seeAllFaqs": "Ver todas las preguntas frecuentes",
     "backToFaqs": "Volver a las preguntas frecuentes",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "keepReading": "Seguir leyendo",
+    "readNow": "Leer ahora",
     "whatIsGEO": {
       "question": "¿Qué es GEO?",
       "answer": "GEO (Optimización de Motores Generativos) es un campo de vanguardia que ayuda a las marcas a destacar y rendir mejor en las principales plataformas impulsadas por IA como ChatGPT, Perplexity, Claude y Gemini."
