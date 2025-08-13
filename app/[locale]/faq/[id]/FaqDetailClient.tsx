@@ -8,6 +8,7 @@ import { BreadcrumbNav } from '@/components/Breadcrumb'
 import { Link } from '@/i18n/navigation'
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import Image from 'next/image'
 
 // Types should match the parent page
 interface FaqDetailClientProps {
@@ -19,27 +20,35 @@ interface FaqDetailClientProps {
     description: string
     keywords: string[]
   }
+  imagePath: string
   prevFaq: { id: string; question: string } | null
   nextFaq: { id: string; question: string } | null
   randomFaqs: Array<{ id: string; question: string; description: string }>
 }
 
-export default function FaqDetailClient({ faq, prevFaq, nextFaq, randomFaqs }: FaqDetailClientProps) {
+export default function FaqDetailClient({ faq, imagePath, prevFaq, nextFaq, randomFaqs }: FaqDetailClientProps) {
   const t = useTranslations('Faq')
   const tFooter = useTranslations('Footer')
 
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
-      <main className='flex-1 max-w-3xl w-full mx-auto px-6 py-16 md:py-24 text-[var(--foreground)]'>
-        <BreadcrumbNav
-          items={[
-            { label: tFooter('faq'), href: '/faq' },
-            { label: faq.question, current: true },
-          ]}
-        />
+      <div className='w-full bg-[var(--background-secondary)] flex items-center'>
+        <div className='flex-1 max-w-4xl mx-auto px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6'>
+          <div>
+            <BreadcrumbNav
+              items={[
+                { label: tFooter('faq'), href: '/faq' },
+                { label: faq.question, current: true },
+              ]}
+            />
+            <h1 className='font-bold text-4xl leading-tight'>{faq.question}</h1>
+          </div>
+          <Image src={imagePath} alt='FAQ Detail' width={400} height={300} className='rounded-lg w-80 h-auto' />
+        </div>
+      </div>
+      <main className='flex-1 max-w-4xl w-full mx-auto px-6 pt-10 pb-16 md:pb-24 text-[var(--foreground)]'>
         <article className='prose max-w-none'>
-          <h1>{faq.question}</h1>
           <ReactMarkdown>{faq.answer}</ReactMarkdown>
         </article>
 

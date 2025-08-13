@@ -46,7 +46,9 @@ export default async function RootLayout({
   setRequestLocale(locale)
 
   const fontClassName =
-    (locale.startsWith('zh') || locale === 'ja' ? `${hostGrotesk.className} ${notoSansSC.className}` : hostGrotesk.className) + ' antialiased'
+    (locale.startsWith('zh') || locale === 'ja' ? `${hostGrotesk.className} ${notoSansSC.className}` : hostGrotesk.className) +
+    ' antialiased'
+  // const fontClassName = 'antialiased'
   const isCN = process.env.NEXT_PUBLIC_IS_CN === 'true'
   const gtagId = isCN ? 'G-4DGHG97VFD' : 'G-8EQNB4Z321'
   const hmId = isCN ? '54385ebe505504cafad559dd840b349f' : '3c24963f8914978d1b900f66a8eef4e5'

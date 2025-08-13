@@ -22,9 +22,7 @@ interface BreadcrumbProps {
 }
 
 export function BreadcrumbNav({ items = [] }: BreadcrumbProps) {
-  const defaultItems = [
-    { label: '', href: '/', icon: <Home className='h-4 w-4' />, current: false },
-  ]
+  const defaultItems = [{ label: '', href: '/', icon: <Home className='h-4 w-4' />, current: false }]
 
   const allItems = items.length > 0 ? [...defaultItems, ...items] : defaultItems
 
@@ -35,14 +33,12 @@ export function BreadcrumbNav({ items = [] }: BreadcrumbProps) {
           <React.Fragment key={index}>
             <BreadcrumbItem>
               {item.current ? (
-                <BreadcrumbPage>
+                <BreadcrumbPage className='max-w-[260px] truncate' title={item.label}>
                   {item.icon ? item.icon : item.label}
                 </BreadcrumbPage>
               ) : (
                 <BreadcrumbLink asChild>
-                  <Link href={item.href!}>
-                    {item.icon ? item.icon : item.label}
-                  </Link>
+                  <Link href={item.href!}>{item.icon ? item.icon : item.label}</Link>
                 </BreadcrumbLink>
               )}
             </BreadcrumbItem>

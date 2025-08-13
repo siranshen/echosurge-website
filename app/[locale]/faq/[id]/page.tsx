@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { FaqCategory, FaqItem } from '@/faqs/types'
 import FaqDetailClient from './FaqDetailClient'
+import { getRandomFaqImage } from '@/lib/faq-images'
 import { Metadata } from 'next'
 
 // Cache for FAQ data to avoid repeated JSON loading
@@ -65,7 +66,17 @@ export default async function FaqDetailPage({ params }: { params: Promise<{ loca
   const result = await getFaqWithNavigation(locale, id)
   if (!result) notFound()
 
-  return <FaqDetailClient faq={result.faq} prevFaq={result.prevFaq} nextFaq={result.nextFaq} randomFaqs={result.randomFaqs} />
+  const randomImagePath = getRandomFaqImage()
+
+  return (
+    <FaqDetailClient
+      faq={result.faq}
+      imagePath={randomImagePath}
+      prevFaq={result.prevFaq}
+      nextFaq={result.nextFaq}
+      randomFaqs={result.randomFaqs}
+    />
+  )
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }): Promise<Metadata> {
